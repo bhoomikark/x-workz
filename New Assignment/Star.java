@@ -15,13 +15,7 @@ class Star {
     }
 
     void printDetails() {
-		System.out.println("Star Details ");
-        System.out.println("Name: " + name);
-        System.out.println("Size: " + size);
-        System.out.println("Shining: " + isShining);
-        System.out.println("Color: " + color);
-        System.out.println(" \n");
-    }
+		
 }
 class Bag {
     String material;
