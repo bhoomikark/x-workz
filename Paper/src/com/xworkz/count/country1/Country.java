@@ -28,7 +28,7 @@ import com.xworkz.count.country2.*;
 
             // Creating Portfolio array
             Portfolio[] portfolios = {
-                    new Portfolio("Finance", "Economy", 500, "Raj"),
+                    new Portfolio("Finance", "Economy",500, "Raj"),
                     new Portfolio("Defense", "Military", 800, "Raj"),
                     new Portfolio("Health", "Medical", 300, "Raj"),
                     new Portfolio("Education", "Learning", 200, "Raj")
