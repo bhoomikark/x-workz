@@ -1,7 +1,7 @@
 package com.xworkz.lilyblossomstore.internal.architecture;
 
-public class Building {
-    public Building() {
+public class Home {
+    public Home() {
         System.out.println("A new building is constructed...");
     }
 

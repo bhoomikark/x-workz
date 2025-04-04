@@ -3,6 +3,7 @@ package com.xworkz.lilyblossomstore.external;
 import com.xworkz.lilyblossomstore.internal.animal.Animal;
 import com.xworkz.lilyblossomstore.internal.animal.Dog;
 
+
 import com.xworkz.lilyblossomstore.internal.metal.Aluminium;
 import com.xworkz.lilyblossomstore.internal.metal.Metal;
 
@@ -47,6 +48,19 @@ import com.xworkz.lilyblossomstore.internal.culinary.*;
 import com.xworkz.lilyblossomstore.internal.medical.*;
 import com.xworkz.lilyblossomstore.internal.nature.*;
 import com.xworkz.lilyblossomstore.internal.heroes.*;
+import com.xworkz.lilyblossomstore.internal.forest.*;
+import com.xworkz.lilyblossomstore.internal.architecture.*;
+import com.xworkz.lilyblossomstore.internal.store.*;
+import com.xworkz.lilyblossomstore.internal.space.*;
+import com.xworkz.lilyblossomstore.internal.schooling.*;
+import com.xworkz.lilyblossomstore.internal.kitchen.*;
+import com.xworkz.lilyblossomstore.internal.tech.*;
+import com.xworkz.lilyblossomstore.internal.surrounding.*;
+import com.xworkz.lilyblossomstore.internal.light.*;
+import com.xworkz.lilyblossomstore.internal.lightsource.*;
+import com.xworkz.lilyblossomstore.internal.technology.*;
+
+
 
 
 
@@ -914,6 +928,250 @@ public class Runner {
             spiderman2.wearSuit();
             spiderman2.getAlias();
 
+            System.out.println("\n--- 41.Bird and parrot Example ---");
+            Bird bird = new Bird();
+            bird.fly();
+            bird.sing();
+            bird.eat();
+            bird.buildNest();
+            bird.migrate();
+
+
+            Bird parrot1 = new Parrot();
+            parrot1.fly();
+            parrot1.sing();
+            parrot1.eat();
+            parrot1.buildNest();
+            parrot1.migrate();
+
+
+            Parrot parrot2 = new Parrot();
+            parrot2.fly();
+            parrot2.sing();
+            parrot2.eat();
+            parrot2.buildNest();
+            parrot2.migrate();
+
+            System.out.println("\n--- 42. Building Example ---");
+            Home home = new Home();
+            home.provideShelter();
+            home.hasFloors();
+            home.hasWindows();
+            home.supportsElectricity();
+            home.hasSecurity();
+
+
+            Home skyscraper1 = new Skyscraper();
+            skyscraper1.provideShelter();
+            skyscraper1.hasFloors();
+            skyscraper1.hasWindows();
+            skyscraper1.supportsElectricity();
+            skyscraper1.hasSecurity();
+
+
+            Skyscraper skyscraper2 = new Skyscraper();
+            skyscraper2.provideShelter();
+            skyscraper2.hasFloors();
+            skyscraper2.hasWindows();
+            skyscraper2.supportsElectricity();
+            skyscraper2.hasSecurity();
+
+            System.out.println("\n--- 43.Library and Digital LibraryExample ---");
+            Library library = new Library();
+            library.addBook();
+            library.issueBook();
+            library.returnBook();
+            library.catalog();
+            library.membership();
+
+            Library digitalLib1 = new DigitalLibrary();
+            digitalLib1.addBook();
+            digitalLib1.issueBook();
+            digitalLib1.returnBook();
+            digitalLib1.catalog();
+            digitalLib1.membership();
+
+
+            DigitalLibrary digitalLib2 = new DigitalLibrary();
+            digitalLib2.addBook();
+            digitalLib2.issueBook();
+            digitalLib2.returnBook();
+            digitalLib2.catalog();
+            digitalLib2.membership();
+
+            System.out.println("\n--- 44.Spacecraft and rocket Example ---");
+            Spacecraft spacecraft = new Spacecraft();
+            spacecraft.launch();
+            spacecraft.land();
+            spacecraft.orbit();
+            spacecraft.communicate();
+            spacecraft.collectData();
+
+            Spacecraft rocket1 = new Rockett();
+            rocket1.launch();
+            rocket1.land();
+            rocket1.orbit();
+            rocket1.communicate();
+            rocket1.collectData();
+
+            Rockett rocket2 = new Rockett();
+            rocket2.launch();
+            rocket2.land();
+            rocket2.orbit();
+            rocket2.communicate();
+            rocket2.collectData();
+
+            System.out.println("\n--- 45.Teacher Example ---");
+            Teacher teacher = new Teacher();
+            teacher.teach();
+            teacher.gradePapers();
+            teacher.prepareLesson();
+            teacher.conductExam();
+            teacher.guideStudents();
+
+
+            Teacher mathTeacher1 = new MathTeacher();
+            mathTeacher1.teach();
+            mathTeacher1.gradePapers();
+            mathTeacher1.prepareLesson();
+            mathTeacher1.conductExam();
+            mathTeacher1.guideStudents();
+
+
+            MathTeacher mathTeacher2 = new MathTeacher();
+            mathTeacher2.teach();
+            mathTeacher2.gradePapers();
+            mathTeacher2.prepareLesson();
+            mathTeacher2.conductExam();
+            mathTeacher2.guideStudents();
+
+            System.out.println("\n--- 46.Food and cake Example ---");
+            Food food = new Food();
+            food.cook();
+            food.serve();
+            food.eat();
+            food.digest();
+            food.store();
+
+            Food cake1 = new Cake();
+            cake1.cook();
+            cake1.serve();
+            cake1.eat();
+            cake1.digest();
+            cake1.store();
+
+
+            Cake cake2 = new Cake();
+            cake2.cook();
+            cake2.serve();
+            cake2.eat();
+            cake2.digest();
+            cake2.store();
+
+            System.out.println("\n--- 47.Software Example ---");
+            Software software = new Software();
+            software.install();
+            software.execute();
+            software.update();
+            software.debug();
+            software.uninstall();
+
+            Software os1 = new OperatingSystem();
+            os1.install();
+            os1.execute();
+            os1.update();
+            os1.debug();
+            os1.uninstall();
+
+            OperatingSystem os2 = new OperatingSystem();
+            os2.install();
+            os2.execute();
+            os2.update();
+            os2.debug();
+            os2.uninstall();
+
+            System.out.println("\n--- 48.Tree and oak Example ---");
+            Tree tree = new Tree();
+            tree.grow();
+            tree.photosynthesize();
+            tree.shedLeaves();
+            tree.bearFruit();
+            tree.provideOxygen();
+
+
+            Tree oak1 = new Oak();
+            oak1.grow();
+            oak1.photosynthesize();
+            oak1.shedLeaves();
+            oak1.bearFruit();
+            oak1.provideOxygen();
+
+
+            Oak oak2 = new Oak();
+            oak2.grow();
+            oak2.photosynthesize();
+            oak2.shedLeaves();
+            oak2.bearFruit();
+            oak2.provideOxygen();
+
+            System.out.println("\n--- 49.Light and lightsource Example ---");
+            LightSourcee light2 = new LightSourcee();
+            light2.lightColor();
+            light2.lightMaterial();
+            light2.lightSource();
+            light2.lightType();
+            light2.material();
+
+            LightSourcee light3 = new Light();
+            light3.lightColor();
+            light3.lightMaterial();
+            light3.lightSource();
+            light3.lightType();
+            light3.material();
+
+            Light light4=new Light();
+            light4.lightColor();
+            light4.lightMaterial();
+            light4.lightSource();
+            light4.lightType();
+            light4.material();
+
+            System.out.println("\n--- 50.Robot Example ---");
+            Robot robot = new Robot();
+            robot.powerOn();
+            robot.performTask();
+            robot.recharge();
+            robot.communicate();
+            robot.shutdown();
+
+            Robot humanoid1 = new HumanoidRobot();
+            humanoid1.powerOn();
+            humanoid1.performTask();
+            humanoid1.recharge();
+            humanoid1.communicate();
+            humanoid1.shutdown();
+
+
+            HumanoidRobot humanoid2 = new HumanoidRobot();
+            humanoid2.powerOn();
+            humanoid2.performTask();
+            humanoid2.recharge();
+            humanoid2.communicate();
+            humanoid2.shutdown();
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
         }
 
 
@@ -921,5 +1179,5 @@ public class Runner {
 
 
 
-        }
+
 

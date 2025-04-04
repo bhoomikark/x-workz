@@ -1,2 +1,27 @@
-package com.xworkz.lilyblossomstore.internal.shield;public class Shield {
+package com.xworkz.lilyblossomstore.internal.shield;
+
+public class Shield {
+    public Shield() {
+        System.out.println("Running Shield Constructor in Shield class");
+    }
+
+    public void block() {
+        System.out.println("Blocking an attack.");
+    }
+
+    public void reflect() {
+        System.out.println("Reflecting a hit.");
+    }
+
+    public void absorbImpact() {
+        System.out.println("Absorbing impact.");
+    }
+
+    public void repair() {
+        System.out.println("Repairing the shield.");
+    }
+
+    public void enhance() {
+        System.out.println("Enhancing shield strength.");
+    }
 }

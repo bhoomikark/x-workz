@@ -1,2 +1,27 @@
-package com.xworkz.lilyblossomstore.internal.flowershop;public class FlowerShop {
+package com.xworkz.lilyblossomstore.internal.flowershop;
+
+public class FlowerShop {
+    public FlowerShop() {
+        System.out.println("Running FlowerShop Constructor in FlowerShop class");
+    }
+
+    public void sellFlowers() {
+        System.out.println("Selling flowers in the shop.");
+    }
+
+    public void arrangeBouquets() {
+        System.out.println("Arranging flower bouquets.");
+    }
+
+    public void provideDelivery() {
+        System.out.println("Providing flower delivery service.");
+    }
+
+    public void takeOrders() {
+        System.out.println("Taking customer orders for flowers.");
+    }
+
+    public void decorateShop() {
+        System.out.println("Decorating the FlowerShop.");
+    }
 }

@@ -1,2 +1,24 @@
-package com.xworkz.lilyblossomstore.external;public class StickerRunner {
+package com.xworkz.lilyblossomstore.external;
+
+import com.xworkz.lilyblossomstore.internal.sticker.Sticker;
+import com.xworkz.lilyblossomstore.internal.sticker.VinylSticker;
+
+public class StickerRunner {
+    public static void main(String[] args) {
+        Sticker sticker = new VinylSticker();
+        sticker.peel();
+        sticker.stick();
+        sticker.remove();
+        sticker.print();
+        sticker.decorate();
+
+        System.out.println("-----------");
+
+        VinylSticker vinylSticker = new VinylSticker();
+        vinylSticker.peel();
+        vinylSticker.stick();
+        vinylSticker.remove();
+        vinylSticker.print();
+        vinylSticker.decorate();
+    }
 }
