@@ -1,0 +1,32 @@
+package com.xworkz.lilyblossomstore.internal.metal;
+
+public class Metal {
+    public Metal() {
+        System.out.println("Running Metal Constructor in Metal class");
+    }
+
+    public void getBoilingPoint() {
+        System.out.println("Parent Class");
+        System.out.println("Running getBoilingPoint method in Metal class");
+    }
+
+    public void getHardness() {
+        System.out.println("Parent Class");
+        System.out.println("Running getHardness method in Metal class");
+    }
+
+    public void checkCorrosionResistance() {
+        System.out.println("Parent Class");
+        System.out.println("Running checkCorrosionResistance method in Metal class");
+    }
+
+    public void conductHeat() {
+        System.out.println("Parent Class");
+        System.out.println("Running conductHeat method in Metal class");
+    }
+
+    public void isMalleable() {
+        System.out.println("Parent Class");
+        System.out.println("Running isMalleable method in Metal class");
+    }
+}
