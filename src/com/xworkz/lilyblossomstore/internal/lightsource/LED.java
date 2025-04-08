@@ -31,4 +31,8 @@ public class LED extends LightSource {
     public void saveEnergy() {
         System.out.println("Saving energy... - Child class");
     }
+    public void ledType() {
+        System.out.println("Child Class");
+        System.out.println("This is a cool-white LED.");
+    }
 }

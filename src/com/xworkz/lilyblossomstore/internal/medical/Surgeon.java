@@ -28,6 +28,9 @@ public class Surgeon extends Doctor {
 
     @Override
     public void reviewTests() {
-        System.out.println("Doctor is reviewing test reports... - Child class");
+        System.out.println("Doctor is reviewing test reports... - Child class");}
+    public void performSurgery() {
+            System.out.println("Surgeon is performing surgery.");
+        }
     }
-}
+

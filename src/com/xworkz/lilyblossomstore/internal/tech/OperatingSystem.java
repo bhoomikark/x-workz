@@ -36,4 +36,7 @@ public class OperatingSystem extends Software {
         System.out.println("Child class");
         System.out.println("Uninstalling OS is not typically allowed...");
     }
+    public void systemInfo() {
+        System.out.println("Operating System provides system information.");
+    }
 }

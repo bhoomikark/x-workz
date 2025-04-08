@@ -37,4 +37,9 @@ public class SavingsAccount extends BankAccount {
         System.out.println("Child Class");
         System.out.println("Applying for loan using savings account...");
     }
+    public void generateAccount()
+    {
+        System.out.println("Child Class");
+        System.out.println("generate account");
+    }
 }

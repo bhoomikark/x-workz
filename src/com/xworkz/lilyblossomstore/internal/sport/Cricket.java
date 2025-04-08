@@ -35,4 +35,8 @@ public class Cricket extends Sport {
         System.out.println("Child class");
         System.out.println("Cricket requires bat, ball, stumps, and protective gear.");
     }
+    public void franchiseLeague() {
+        System.out.println("Child Class");
+        System.out.println("This cricket is part of a franchise league (e.g., IPL)...");
+    }
 }

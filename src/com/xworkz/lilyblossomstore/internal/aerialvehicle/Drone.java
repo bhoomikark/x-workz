@@ -25,4 +25,9 @@ public class Drone extends UnmannedAerialVehicle {
     public void capturePhoto() {
         System.out.println("Child Class");
         System.out.println("Drone captured a photo."); }
+    public void powerOff()
+    {
+        System.out.println("Child Class");
+        System.out.println("power is off");
+    }
 }

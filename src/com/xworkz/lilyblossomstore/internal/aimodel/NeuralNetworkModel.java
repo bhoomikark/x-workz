@@ -30,4 +30,9 @@ public class NeuralNetworkModel extends AIModel {
         System.out.println("Child Class");
         System.out.println("Validating Neural Network accuracy...");
     }
+    public void test()
+    {
+        System.out.println("Child Class");
+        System.out.println("Testing Neural Network accuracy...");
+    }
 }

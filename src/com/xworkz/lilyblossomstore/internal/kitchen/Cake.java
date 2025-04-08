@@ -36,4 +36,7 @@ public class Cake extends Food {
         System.out.println("Child Class");
         System.out.println("Storing the cake in the fridge...");
     }
+    public void decorate() {
+        System.out.println("Cake is being decorated with frosting and toppings.");
+    }
 }

@@ -36,4 +36,8 @@ public class PoliceDepartment extends Government {
         System.out.println("Child Class");
         System.out.println("Police offer emergency and legal services.");
     }
+    public void conductInvestigation() {
+        System.out.println("Child Class");
+        System.out.println("Police Department is conducting criminal investigations...");
+    }
 }

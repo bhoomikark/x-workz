@@ -4,7 +4,10 @@ import com.xworkz.lilyblossomstore.internal.animal.Animal;
 import com.xworkz.lilyblossomstore.internal.animal.Dog;
 
 
+import com.xworkz.lilyblossomstore.internal.animal.Shitzu;
+import com.xworkz.lilyblossomstore.internal.iron.Utensils;
 import com.xworkz.lilyblossomstore.internal.metal.Aluminium;
+import com.xworkz.lilyblossomstore.internal.metal.AluminiumProperties;
 import com.xworkz.lilyblossomstore.internal.metal.Metal;
 
 import com.xworkz.lilyblossomstore.internal.iron.Iron;
@@ -12,6 +15,7 @@ import com.xworkz.lilyblossomstore.internal.iron.Steel;
 
 import com.xworkz.lilyblossomstore.internal.spell.Spell;
 import com.xworkz.lilyblossomstore.internal.vehicle.Car;
+import com.xworkz.lilyblossomstore.internal.vehicle.CarBrand;
 import com.xworkz.lilyblossomstore.internal.vehicle.Vehicle;
 import com.xworkz.lilyblossomstore.internal.appliance.*;
 import com.xworkz.lilyblossomstore.internal.bankaccount.*;
@@ -87,6 +91,10 @@ public class Runner {
             steel.getMeltingPoint();
             steel.magneticProperties();
             steel.conductElectricity();
+            Utensils utensils=new Utensils();
+            utensils.wash(iron);
+            utensils.wash(iron1);
+            utensils.wash(steel);
 
             System.out.println("\n--- 2.Metal and aluminium example---");
             Metal metal = new Metal();
@@ -109,6 +117,11 @@ public class Runner {
             aluminium.getBoilingPoint();
             aluminium.isMalleable();
             aluminium.conductHeat();
+
+            AluminiumProperties aluminiumProperties=new AluminiumProperties();
+            aluminiumProperties.hard(metal);
+            aluminiumProperties.hard(metal1);
+            aluminiumProperties.hard(aluminium);
 
 
             System.out.println("\n===== 3.VEHICLE & CAR =====");
@@ -133,6 +146,11 @@ public class Runner {
             car.applyBrakes();
             car.accelerate();
 
+            CarBrand carBrand=new CarBrand();
+            carBrand.Brand(vehicle);
+            carBrand.Brand(vehicle1);
+            carBrand.Brand(car);
+
             System.out.println("\n===== 4.ANIMAL & DOG =====");
             Animal animal = new Dog();
             animal.eat();
@@ -154,6 +172,11 @@ public class Runner {
             dog.makeSound();
             dog.hunt();
             dog.move();
+
+            Shitzu shitzu=new Shitzu();
+            shitzu.DogBreed(animal);
+            shitzu.DogBreed(animal1);
+            shitzu.DogBreed(dog);
 
             System.out.println("\n===== 5.APPLIANCE & REFRIGERATOR =====");
             Appliance appliance = new Appliance();
@@ -177,6 +200,11 @@ public class Runner {
             fridge.checkWarranty();
             fridge.displayBrand();
 
+            ElectricRefrigerator electricRefrigerator=new ElectricRefrigerator();
+            electricRefrigerator.Cools(appliance);
+            electricRefrigerator.Cools(fridgeAsAppliance);
+            electricRefrigerator.Cools(fridge);
+
             System.out.println("\n===== 6.EMPLOYEE & MANAGER =====");
             Employee employee = new Employee();
             employee.work();
@@ -199,6 +227,11 @@ public class Runner {
             manager.receiveSalary();
             manager.applyLeave();
 
+            ManagerPA managerPA=new ManagerPA();
+            managerPA.allocateSalary(employee);
+            managerPA.allocateSalary(managerAsEmployee);
+            managerPA.allocateSalary(manager);
+
             System.out.println("\n===== 7.BANK ACCOUNT & SAVINGS ACCOUNT =====");
             BankAccount bankAccount = new BankAccount();
             bankAccount.deposit();
@@ -220,6 +253,10 @@ public class Runner {
             savings.checkBalance();
             savings.generateStatement();
             savings.applyLoan();
+             GeneralAccount generalAccount=new GeneralAccount();
+             generalAccount.generateOTP(bankAccount);
+             generalAccount.generateOTP(savingsAsBank);
+             generalAccount.generateOTP(savings);
 
             System.out.println("\n===== 8.BUILDING & HOUSE =====");
             Building building = new Building();
@@ -227,14 +264,15 @@ public class Runner {
             building.openDoors();
             building.lockWindows();
             building.turnOnLights();
-            building.cleanBuilding();
 
             Building houseAsBuilding = new House();
             houseAsBuilding.provideShelter();
             houseAsBuilding.openDoors();
             houseAsBuilding.lockWindows();
             houseAsBuilding.turnOnLights();
-            houseAsBuilding.cleanBuilding();
+
+
+
 
             House house = new House();
             house.provideShelter();
@@ -242,6 +280,11 @@ public class Runner {
             house.lockWindows();
             house.turnOnLights();
             house.cleanBuilding();
+
+            BrickBuilding brickBuilding = new BrickBuilding();
+            brickBuilding.construct(building);
+            brickBuilding.construct(houseAsBuilding);
+            brickBuilding.construct(house);
 
             System.out.println("\n===== 9.COMPUTER & LAPTOP =====");
             Computer computer = new Computer();
@@ -265,6 +308,11 @@ public class Runner {
             laptop.storeData();
             laptop.displayOutput();
 
+            LaptopBrand laptopBrand = new LaptopBrand();
+            laptopBrand.Brand(computer);
+            laptopBrand.Brand(laptopAsComputer);
+            laptopBrand.Brand(laptop);
+
             System.out.println("\n===== 10.INSTRUMENT & GUITAR =====");
             Instrument instrument = new Instrument();
             instrument.playSound();
@@ -287,6 +335,11 @@ public class Runner {
             guitar.maintainInstrument();
             guitar.storeInstrument();
 
+            GuitarString guitarString = new GuitarString();
+            guitarString.noOfString(instrument);
+            guitarString.noOfString(guitarAsInstrument);
+            guitarString.noOfString(guitar);
+
             System.out.println("\n===== 11.LIGHT SOURCE & LED =====");
             LightSource light = new LightSource();
             light.turnOn();
@@ -308,6 +361,11 @@ public class Runner {
             led.adjustBrightness();
             led.changeColor();
             led.saveEnergy();
+
+            TubeYellowLight tube = new TubeYellowLight();
+            tube.colorOfLight(light);
+            tube.colorOfLight(ledAsLight);
+            tube.colorOfLight(led);
 
 
             System.out.println("\n===== 12.CAMERA & DSLR =====");
@@ -332,6 +390,11 @@ public class Runner {
             dslr.adjustFocus();
             dslr.changeMode();
 
+            SLR slr = new SLR();
+            slr.view(camera);
+            slr.view(dslrAsCamera);
+            slr.view(dslr);
+
             System.out.println("\n===== 13.UNIVERSITY & ENGINEERING COLLEGE =====");
             University university = new University();
             university.offerCourses();
@@ -353,6 +416,10 @@ public class Runner {
             enggCollege.hostEvents();
             enggCollege.provideScholarships();
             enggCollege.researchPrograms();
+            VTUUniversity vtu = new VTUUniversity();
+            vtu.VTU(university);
+            vtu.VTU(engAsUniv);
+            vtu.VTU(enggCollege);
 
 
             System.out.println("\n===== 14.GOVERNMENT & POLICE DEPARTMENT =====");
@@ -377,6 +444,13 @@ public class Runner {
             policeDept.manageEconomy();
             policeDept.publicServices();
 
+            GovernmentOfficers officers = new GovernmentOfficers();
+            officers.offers(government);
+            officers.offers(policeAsGov);
+            officers.offers(policeDept);
+
+
+
 
             System.out.println("\n===== 15.PAINTER & WATERCOLOR ARTIST =====");
             Painter painter = new Painter();
@@ -399,6 +473,10 @@ public class Runner {
             watercolorArtist.paintCanvas();
             watercolorArtist.cleanBrushes();
             watercolorArtist.framePainting();
+            PaintArtist paintArtist = new PaintArtist();
+            paintArtist.artistName(painter);
+            paintArtist.artistName(artistAsPainter);
+            paintArtist.artistName(watercolorArtist);
 
 
             System.out.println("\n===== 16.PHONE & SMARTPHONE =====");
@@ -422,6 +500,11 @@ public class Runner {
             smartphone.charge();
             smartphone.connectWifi();
             smartphone.turnOff();
+            KeyPad keypad = new KeyPad();
+            keypad.dial(phone);
+            keypad.dial(phone1);
+            keypad.dial(smartphone);
+
 
             System.out.println("\n===== 17.PLANT & CACTUS =====");
             Plant plant = new Plant();
@@ -445,6 +528,11 @@ public class Runner {
             cactus.produceOxygen();
             cactus.reproduce();
 
+            SpinePlant spinePlant = new SpinePlant();
+            spinePlant.noOfSpines(plant);
+            spinePlant.noOfSpines(plant1);
+            spinePlant.noOfSpines(cactus);
+
             System.out.println("\n===== 18.BANK & ONLINEBANK =====");
             Bank bank = new Bank();
             bank.openAccount();
@@ -466,6 +554,10 @@ public class Runner {
             onlineBank.depositMoney();
             onlineBank.withdrawMoney();
             onlineBank.transferMoney();
+            KaranatakaBank karBank = new KaranatakaBank();
+            karBank.PayCash(bank);
+            karBank.PayCash(bank1);
+            karBank.PayCash(onlineBank);
 
             System.out.println("\n===== 19.LAMP & LEDLAMP =====");
             Lamp lamp = new Lamp();
@@ -488,6 +580,11 @@ public class Runner {
             ledLamp.adjustBrightness();
             ledLamp.changeBulb();
             ledLamp.checkPowerConsumption();
+            BatteryLamp batteryLamp = new BatteryLamp();
+            batteryLamp.lifeSpan(lamp);
+            batteryLamp.lifeSpan(lamp1);
+            batteryLamp.lifeSpan(ledLamp);
+
 
             System.out.println("\n===== 20.WATCH & SMARTWATCH =====");
             Watch watch = new Watch();
@@ -511,6 +608,12 @@ public class Runner {
             smartWatch.changeBattery();
             smartWatch.adjustStrap();
 
+            CasioWatch casioWatch = new CasioWatch();
+            casioWatch.price(watch);
+            casioWatch.price(watch1);
+            casioWatch.price(smartWatch);
+
+
             System.out.println("\n===== 21.SPORT & CRICKET =====");
             Sport sport = new Sport();
             sport.play();
@@ -533,6 +636,10 @@ public class Runner {
             cricket.getPlayers();
             cricket.getEquipment();
 
+            CricketFranchise franchise = new CricketFranchise();
+            franchise.Franchise(sport);
+            franchise.Franchise(sport1);
+            franchise.Franchise(cricket);
             System.out.println("\n===== 22.FRUIT & MANGO =====");
             Fruit fruit = new Fruit();
             fruit.grow();
@@ -554,6 +661,10 @@ public class Runner {
             mango.eat();
             mango.getTaste();
             mango.getNutrition();
+            MangoTypes mangoTypes = new MangoTypes();
+            mangoTypes.Type(fruit);
+            mangoTypes.Type(fruit1);
+            mangoTypes.Type(mango);
 
             System.out.println("\n===== 23.FISH & GOLDFISH =====");
             Fish fish = new Fish();
@@ -576,6 +687,9 @@ public class Runner {
             goldfish.layEggs();
             goldfish.getColor();
             goldfish.getSize();
+            Aquarium aquarium = new Aquarium();
+            aquarium.diffFish(fish);
+            aquarium.diffFish(fish1);
 
             System.out.println("\n===== 24.TOY & REMOTE CONTROL CAR =====");
             Toy toy = new Toy();
@@ -598,6 +712,10 @@ public class Runner {
             remoteCar.checkBattery();
             remoteCar.move();
             remoteCar.getColor();
+            NarutoToy narutoToy = new NarutoToy();
+            narutoToy.gadget(toy);
+            narutoToy.gadget(toy1);
+            narutoToy.gadget(remoteCar);
 
             System.out.println("\n===== 25.CHAIR & RECLINER =====");
             Chair chair = new Chair();
@@ -620,6 +738,10 @@ public class Runner {
             recliner.recline();
             recliner.checkMaterial();
             recliner.checkComfort();
+            ChairTester tester = new ChairTester();
+            tester.checkChair(chair);
+            tester.checkChair(chair1);
+            tester.checkChair(recliner);
 
             System.out.println("\n===== 26.BOTTLE & THERMOS =====");
             Bottle bottle = new Bottle();
@@ -642,6 +764,10 @@ public class Runner {
             thermos.closeCap();
             thermos.checkMaterial();
             thermos.checkCapacity();
+            Tupperware tupperware = new Tupperware();
+            tupperware.noOfBottle(bottle);
+            tupperware.noOfBottle(bottle1);
+            tupperware.noOfBottle(thermos);
 
             System.out.println("\n--- 27.Spell and FireSpell Example ---");
             Spell spell = new Spell();
@@ -661,6 +787,10 @@ public class Runner {
             fireSpell2.releasePower();
             fireSpell2.duration();
             fireSpell2.source();
+            Witch witch = new Witch();
+            witch.magicBottle(spell);
+            witch.magicBottle(fireSpell2);
+            witch.magicBottle(fireSpell);
 
 
             System.out.println("\n---  28.Emotion and Happiness Example ---");
@@ -682,6 +812,10 @@ public class Runner {
             happy2.cause();
             happy2.express();
             happy2.duration();
+            Pleasure pleasure = new Pleasure();
+            pleasure.express(emotion);
+            pleasure.express(happy);
+            pleasure.express(happy2);
 
             System.out.println("\n--- 29.AIModel and NeuralNetworkModel Example ---");
 
@@ -707,6 +841,13 @@ public class Runner {
             neuralModel2.optimize();
             neuralModel2.validate();
 
+            AIMLModel aimlModel=new AIMLModel();
+            aimlModel.learn(model);
+            aimlModel.learn(neuralModel1);
+            aimlModel.learn(neuralModel2);
+
+
+
             System.out.println("\n--- 30.Currency and Cryptocurrency Example ---");
             Currency currency = new Currency();
             currency.value();
@@ -725,6 +866,10 @@ public class Runner {
             crypto2.exchange();
             crypto2.store();
             crypto2.regulation();
+            CurrencyUSA currencyUSA = new CurrencyUSA();
+            currencyUSA.dollars(currency);
+            currencyUSA.dollars(crypto);
+            currencyUSA.dollars(crypto2);
 
 
             System.out.println("\n--- 31.Astronaut and SpaceTourist Example ---");
@@ -746,6 +891,11 @@ public class Runner {
             tourist2.research();
             tourist2.eatSpaceFood();
             tourist2.communicate();
+            Cosmonauts cosmonauts = new Cosmonauts();
+            cosmonauts.spaceResearch(astronaut);
+            cosmonauts.spaceResearch(tourist);
+            cosmonauts.spaceResearch(tourist2);
+
 
             System.out.println("\n---  32.Ink and InvisibleInk Example ---");
             Ink ink = new Ink();
@@ -767,6 +917,11 @@ public class Runner {
             invisibleInk2.dry();
             invisibleInk2.permanence();
             invisibleInk2.use();
+            BlueInk blueInk = new BlueInk();
+            blueInk.inkSpill(ink);
+            blueInk.inkSpill(invisibleInk1);
+            blueInk.inkSpill(invisibleInk2);
+
 
             System.out.println("\n--- 33.Dream and Nightmare Example ---");
             Dream dream = new Dream();
@@ -787,6 +942,11 @@ public class Runner {
             nightmare2.meaning();
             nightmare2.remember();
             nightmare2.influence();
+            GoodDreams dreamHandler = new GoodDreams();
+            dreamHandler.happinessDream(dream);
+            dreamHandler.happinessDream(nightmare);
+            dreamHandler.happinessDream(nightmare2);
+
             ;
 
             System.out.println("\n--- 34.Potion and HealingPotion Example ---");
@@ -807,6 +967,10 @@ public class Runner {
             healPotion2.effect();
             healPotion2.duration();
             healPotion2.ingredients();
+            PoisonousPotion handler = new PoisonousPotion();
+            handler.harm(potion);
+            handler.harm(healPotion);
+            handler.harm(healPotion2);
 
             System.out.println("\n--- 35.Planet and Earth Example ---");
             Planet planet = new Planet();
@@ -832,6 +996,11 @@ public class Runner {
             earth2.containsWater();
             earth2.supportsLife();
 
+            Mars mars = new Mars();
+            mars.isAlive(planet);
+            mars.isAlive(earth1);
+            mars.isAlive(earth2);
+
             System.out.println("\n--- 37.Chef and pastry Example ---");
             Chef chef = new Chef();
             chef.cook();
@@ -855,7 +1024,10 @@ public class Runner {
             pastryChef2.season();
             pastryChef2.plateDish();
             pastryChef2.taste();
-
+            PizzaChef pizzaChef = new PizzaChef();
+            pizzaChef.bakePizza(chef);
+            pizzaChef.bakePizza(pastryChef1);
+            pizzaChef.bakePizza(pastryChef2);
             System.out.println("\n--- 38.Doctor and surgeon Example ---");
             Doctor doctor = new Doctor();
             doctor.diagnose();
@@ -879,6 +1051,11 @@ public class Runner {
             surgeon2.performCheckup();
             surgeon2.giveAdvice();
             surgeon2.reviewTests();
+            Patient patient = new Patient();
+            patient.noOfPatients();
+            patient.consultDoctor(doctor);
+            patient.consultDoctor(surgeon1);
+            patient.consultDoctor(surgeon2);
 
             System.out.println("\n--- 39.Mountain and everest Example ---");
             Mountain mountain = new Mountain();
@@ -903,6 +1080,10 @@ public class Runner {
             everest2.hasSnow();
             everest2.location();
             everest2.ecosystem();
+            AmazonForest amazonForest = new AmazonForest();
+            amazonForest.noOfTrees(mountain);
+            amazonForest.noOfTrees(everest1);
+            amazonForest.noOfTrees(everest2);
 
             System.out.println("\n--- 40.Superhero and  Example ---");
             SuperHero hero = new SuperHero();
@@ -911,6 +1092,7 @@ public class Runner {
             hero.rescuePeople();
             hero.wearSuit();
             hero.getAlias();
+
 
 
             SuperHero spiderman1 = new Spiderman();
@@ -927,6 +1109,11 @@ public class Runner {
             spiderman2.rescuePeople();
             spiderman2.wearSuit();
             spiderman2.getAlias();
+            MarvelHero marvelHero = new MarvelHero();
+            marvelHero.fight(hero);
+            marvelHero.fight(spiderman1);
+            marvelHero.fight(spiderman2);
+
 
             System.out.println("\n--- 41.Bird and parrot Example ---");
             Bird bird = new Bird();
@@ -951,6 +1138,10 @@ public class Runner {
             parrot2.eat();
             parrot2.buildNest();
             parrot2.migrate();
+            ParrotBreed breedHandler = new ParrotBreed();
+            breedHandler.type(bird);
+            breedHandler.type(parrot1);
+            breedHandler.type(parrot2);
 
             System.out.println("\n--- 42. Building Example ---");
             Home home = new Home();
@@ -975,6 +1166,10 @@ public class Runner {
             skyscraper2.hasWindows();
             skyscraper2.supportsElectricity();
             skyscraper2.hasSecurity();
+            HomeDesign designer = new HomeDesign();
+            designer.design(home);
+            designer.design(skyscraper1);
+            designer.design(skyscraper2);
 
             System.out.println("\n--- 43.Library and Digital LibraryExample ---");
             Library library = new Library();
@@ -998,6 +1193,10 @@ public class Runner {
             digitalLib2.returnBook();
             digitalLib2.catalog();
             digitalLib2.membership();
+            TypeOfBook type = new TypeOfBook();
+            type.bookType(library);
+            type.bookType(digitalLib1);
+            type.bookType(digitalLib2);
 
             System.out.println("\n--- 44.Spacecraft and rocket Example ---");
             Spacecraft spacecraft = new Spacecraft();
@@ -1020,6 +1219,10 @@ public class Runner {
             rocket2.orbit();
             rocket2.communicate();
             rocket2.collectData();
+            Jet jetInspector = new Jet();
+            jetInspector.typeOfJet(spacecraft);
+            jetInspector.typeOfJet(rocket1);
+            jetInspector.typeOfJet(rocket2);
 
             System.out.println("\n--- 45.Teacher Example ---");
             Teacher teacher = new Teacher();
@@ -1044,6 +1247,10 @@ public class Runner {
             mathTeacher2.prepareLesson();
             mathTeacher2.conductExam();
             mathTeacher2.guideStudents();
+            ScienceTeacher handler1 = new ScienceTeacher();
+            handler1.teacherName(teacher);
+            handler1.teacherName(mathTeacher1);
+            handler1.teacherName(mathTeacher2);
 
             System.out.println("\n--- 46.Food and cake Example ---");
             Food food = new Food();
@@ -1067,6 +1274,10 @@ public class Runner {
             cake2.eat();
             cake2.digest();
             cake2.store();
+            Biscuit biscuitHandler = new Biscuit();
+            biscuitHandler.biscuitName(food);
+            biscuitHandler.biscuitName(cake1);
+            biscuitHandler.biscuitName(cake2);
 
             System.out.println("\n--- 47.Software Example ---");
             Software software = new Software();
@@ -1089,6 +1300,10 @@ public class Runner {
             os2.update();
             os2.debug();
             os2.uninstall();
+            Windows windowsHandler = new Windows();
+            windowsHandler.hp(software);
+            windowsHandler.hp(os1);
+            windowsHandler.hp(os2);
 
             System.out.println("\n--- 48.Tree and oak Example ---");
             Tree tree = new Tree();
@@ -1113,6 +1328,10 @@ public class Runner {
             oak2.shedLeaves();
             oak2.bearFruit();
             oak2.provideOxygen();
+            CoconutTree coconut = new CoconutTree();
+            coconut.noOfCoconut(tree);
+            coconut.noOfCoconut(oak1);
+            coconut.noOfCoconut(oak2);
 
             System.out.println("\n--- 49.Light and lightsource Example ---");
             LightSourcee light2 = new LightSourcee();
@@ -1135,6 +1354,12 @@ public class Runner {
             light4.lightSource();
             light4.lightType();
             light4.material();
+            Prism prism = new Prism();
+            prism.checkLightType(light2);
+            prism.checkLightType(light3);
+            prism.checkLightType(light4);
+
+
 
             System.out.println("\n--- 50.Robot Example ---");
             Robot robot = new Robot();
@@ -1159,6 +1384,10 @@ public class Runner {
             humanoid2.communicate();
             humanoid2.shutdown();
 
+            AIRobot aiBot = new AIRobot();
+            aiBot.interactWithRobot(robot);
+            aiBot.interactWithRobot(humanoid1);
+            aiBot.interactWithRobot(humanoid2);
 
 
 

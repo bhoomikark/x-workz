@@ -2,6 +2,7 @@ package com.xworkz.lilyblossomstore.external;
 
 import com.xworkz.lilyblossomstore.internal.animal.Animal;
 import com.xworkz.lilyblossomstore.internal.animal.Dog;
+import com.xworkz.lilyblossomstore.internal.animal.Shitzu;
 
 public class AnimalRunner {
     public static void main(String[] args) {
@@ -26,6 +27,12 @@ public class AnimalRunner {
         dog.eat();
         dog.sleep();
         dog.makeSound();
+
+        System.out.println("Casting");
+        Shitzu shitzu=new Shitzu();
+        shitzu.DogBreed(animal1);
+        shitzu.DogBreed(animal);
+        shitzu.DogBreed(dog);
 
     }
 }

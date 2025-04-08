@@ -31,4 +31,8 @@ public class WatercolorArtist extends Painter {
     public void framePainting() {
         System.out.println("Framing the painting... - Child class");
     }
+    public void useWaterSpray() {
+        System.out.println("Child Class");
+        System.out.println("Watercolor artist is spraying water for blending effects...");
+    }
 }

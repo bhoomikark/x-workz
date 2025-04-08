@@ -27,8 +27,7 @@ public class Building {
         System.out.println("Turning on lights...");
     }
 
-    public void cleanBuilding() {
-        System.out.println("Parent Class");
-        System.out.println("Cleaning the building...");
+    public void decorateHouse() {
+        System.out.println("Decorating the House");
     }
 }

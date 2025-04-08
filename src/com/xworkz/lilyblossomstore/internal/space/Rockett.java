@@ -35,4 +35,8 @@ public class Rockett extends Spacecraft {
         System.out.println("Child class");
         System.out.println("Rockett is collecting telemetry and flight data...");
     }
+
+    public void deploySatellite() {
+        System.out.println("Rockett is deploying a satellite into orbit.");
+    }
 }

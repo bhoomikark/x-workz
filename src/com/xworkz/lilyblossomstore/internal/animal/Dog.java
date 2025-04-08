@@ -35,4 +35,9 @@ public class Dog extends Animal {
         System.out.println("Child Class");
         System.out.println("Dog is hunting small animals.");
     }
+    public void bark()
+    {
+        System.out.println("Child Class");
+        System.out.println("Dog barks");
+    }
 }

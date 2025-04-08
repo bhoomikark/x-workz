@@ -36,4 +36,8 @@ public class Cactus extends Plant {
         System.out.println("Child class");
         System.out.println("Cactus reproduces using seeds and offshoots...");
     }
+    public void storeWater() {
+        System.out.println("Child Class");
+        System.out.println("Cactus is storing water in its tissues...");
+    }
 }

@@ -35,4 +35,9 @@ public class Aluminium extends Metal {
         System.out.println("Child Class");
         System.out.println("Running isMalleable method in Aluminium class");
     }
+    public void doShine()
+    {
+        System.out.println("Child class");
+        System.out.println("Will Aluminium shine??");
+    }
 }

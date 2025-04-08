@@ -29,4 +29,7 @@ public class Nightmare extends Dream {
         System.out.println("Child Class");
         System.out.println("Nightmares can strongly affect mood and sleep...");
     }
+    public void wakeUpSuddenly() {
+        System.out.println("Nightmare often causes sudden waking up.");
+    }
 }

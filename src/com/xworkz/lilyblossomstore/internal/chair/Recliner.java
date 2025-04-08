@@ -37,4 +37,8 @@ public class Recliner extends Chair {
         System.out.println("Child Class");
         System.out.println("Evaluating recliner comfort level");
     }
+    public void remoteControlFeatures() {
+        System.out.println("Child Class");
+        System.out.println("Recliner has remote control features for adjusting angles...");
+    }
 }

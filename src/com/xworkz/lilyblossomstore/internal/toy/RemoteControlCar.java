@@ -35,4 +35,8 @@ public class RemoteControlCar extends Toy {
         System.out.println("Child class");
         System.out.println("Remote control car is red and black.");
     }
+    public void remoteRange() {
+        System.out.println("Child Class");
+        System.out.println("Remote control range is up to 20 meters...");
+    }
 }

@@ -31,4 +31,8 @@ public class LEDLamp extends Lamp {
     public void checkPowerConsumption() {
         System.out.println("Checking LED power consumption - Child class");
     }
+    public void checkColorTemperature() {
+        System.out.println("Child Class");
+        System.out.println("LED Lamp is checking color temperature...");
+    }
 }

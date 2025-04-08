@@ -35,4 +35,7 @@ public class DigitalLibrary extends Library {
         System.out.println("Child class");
         System.out.println("Managing digital library membership online...");
     }
+    public void downloadBook() {
+        System.out.println("DigitalLibrary allows users to download e-books.");
+    }
 }

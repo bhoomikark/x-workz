@@ -35,4 +35,9 @@ public class Refrigerator extends Appliance {
         System.out.println("Child Class");
         System.out.println("Brand: Samsung Refrigerator.");
     }
+    public void checkRating()
+    {
+        System.out.println("Child Class");
+        System.out.println("5 star");
+    }
 }

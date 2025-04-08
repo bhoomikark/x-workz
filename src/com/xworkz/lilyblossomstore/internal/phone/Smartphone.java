@@ -31,4 +31,8 @@ public class Smartphone extends Phone {
     public void turnOff() {
         System.out.println("Turning off the smartphone... - Child class");
     }
+    public void useApps() {
+        System.out.println("Child Class");
+        System.out.println("Smartphone is using various mobile applications...");
+    }
 }

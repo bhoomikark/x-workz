@@ -36,4 +36,7 @@ public class Spiderman extends SuperHero {
         System.out.println("Child Class");
         System.out.println("Spiderman's alias is Peter Parker...");
     }
+    public void swingWeb() {
+        System.out.println("Spiderman swings his web to traverse buildings.");
+    }
 }

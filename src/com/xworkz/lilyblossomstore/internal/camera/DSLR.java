@@ -37,4 +37,8 @@ public class DSLR extends Camera {
         System.out.println("Child Class");
         System.out.println("Switching DSLR shooting mode...");
     }
+    public void dslrSpecialFeature() {
+        System.out.println("Child Class");
+        System.out.println("DSLR supports interchangeable lenses.");
+    }
 }

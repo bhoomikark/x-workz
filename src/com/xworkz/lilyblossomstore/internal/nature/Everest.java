@@ -30,4 +30,7 @@ public class Everest extends Mountain {
     public void ecosystem() {
         System.out.println("Observing the mountain's ecosystem... - Child class");
     }
+    public void summit() {
+        System.out.println("Everest summit is one of the ultimate challenges.");
+    }
 }

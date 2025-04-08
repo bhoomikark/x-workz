@@ -36,4 +36,7 @@ public class Parrot extends Bird {
         System.out.println("Child Class");
         System.out.println("Parrot usually does not migrate far...");
     }
+    public void mimicSound() {
+        System.out.println("Parrot is mimicking human speech.");
+    }
 }

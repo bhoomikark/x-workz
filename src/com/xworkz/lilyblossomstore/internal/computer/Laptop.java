@@ -36,4 +36,8 @@ public class Laptop extends Computer {
         System.out.println("Child Class");
         System.out.println("Displaying output on laptop...");
     }
+    public void showLaptopBrand() {
+        System.out.println("Child Class");
+        System.out.println("Showing Laptop Brand: DELL");
+    }
 }

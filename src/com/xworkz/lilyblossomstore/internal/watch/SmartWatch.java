@@ -36,4 +36,8 @@ public class SmartWatch extends Watch {
         System.out.println("Child class");
         System.out.println("Adjusting silicone strap...");
     }
+    public void trackHeartRate() {
+        System.out.println("Child Class");
+        System.out.println("SmartWatch is tracking heart rate...");
+    }
 }

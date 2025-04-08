@@ -29,6 +29,9 @@ public class Oak extends Tree {
         System.out.println("Child class");
         System.out.println("Oak tree bears acorns as its fruit...");
     }
+    public void woodType() {
+        System.out.println("Oak tree provides strong hardwood.");
+    }
 
     @Override
     public void provideOxygen() {

@@ -30,4 +30,7 @@ public class SpaceTourist extends Astronaut {
         System.out.println("Child Class");
         System.out.println("Tourists communicate with crew...");
     }
+    public void takePhotos() {
+        System.out.println("Space tourist is taking photos in space.");
+    }
 }

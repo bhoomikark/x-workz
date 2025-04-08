@@ -36,4 +36,8 @@ public class GoldFish extends Fish {
         System.out.println("Child Class");
         System.out.println("Goldfish size is medium");
     }
+    public void goldFishType() {
+        System.out.println("Child Class");
+        System.out.println("This is a fancy tail GoldFish...");
+    }
 }

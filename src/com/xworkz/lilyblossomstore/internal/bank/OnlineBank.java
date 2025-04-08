@@ -38,7 +38,7 @@ public class OnlineBank extends Bank {
         System.out.println("Transferring money via net banking...");
     }
 
-    public void checkMobileAppAccess() {
+    public void checkBalanceOnline() {
         System.out.println("Child Class");
         System.out.println("Accessing online bank through mobile app...");
     }

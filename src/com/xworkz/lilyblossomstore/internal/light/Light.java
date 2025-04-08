@@ -30,4 +30,7 @@ public class Light extends LightSourcee {
     public void lightSource() {
         System.out.println("The source is ... - Child class");
     }
+    public void brightnessLevel() {
+        System.out.println("Light: Brightness can be adjusted.");
+    }
 }

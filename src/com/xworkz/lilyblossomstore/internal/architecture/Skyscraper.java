@@ -36,5 +36,8 @@ public class Skyscraper extends Home {
         System.out.println("Child Class");
         System.out.println("Skyscraper has high-tech security systems...");
     }
+    public void hasElevators() {
+        System.out.println("Skyscraper has multiple high-speed elevators.");
+    }
 }
 

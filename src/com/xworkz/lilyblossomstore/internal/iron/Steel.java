@@ -35,4 +35,8 @@ public class Steel extends Iron {
         System.out.println("Child Class");
         System.out.println("Running Magnetic properties method in steel class");
     }
+    public void weight()
+    {
+        System.out.println("The weight of steel is ");
+    }
 }

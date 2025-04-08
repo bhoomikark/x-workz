@@ -36,4 +36,8 @@ public class Mango extends Fruit {
         System.out.println("Child Class");
         System.out.println("Mango is rich in vitamins A and C");
     }
+    public void mangoType() {
+        System.out.println("Child Class");
+        System.out.println("This is an Alphonso mango...");
+    }
 }

@@ -30,9 +30,15 @@ public class Car extends Vehicle {
         System.out.println("Car is accelerating smoothly.");
     }
 
+
     @Override
     public void applyBrakes() {
         System.out.println("Child Class");
         System.out.println("Car brakes are applied.");
+    }
+    public void checKSpeed()
+    {
+        System.out.println("Child Class");
+        System.out.println("Running Check speed in vehicle");
     }
 }

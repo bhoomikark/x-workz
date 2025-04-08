@@ -30,4 +30,7 @@ public class Earth extends Planet {
     public void supportsLife() {
         System.out.println("Earth is the only known planet that supports life... - Child class");
     }
+    public void climateZone() {
+        System.out.println("Earth has various climate zones.");
+    }
 }

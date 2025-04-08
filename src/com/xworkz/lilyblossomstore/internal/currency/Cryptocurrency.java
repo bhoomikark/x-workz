@@ -30,4 +30,7 @@ public class Cryptocurrency extends Currency {
         System.out.println("Child Class");
         System.out.println("Cryptocurrency has limited government regulation...");
     }
+    public void blockchainTechnology() {
+        System.out.println("Cryptocurrency relies on blockchain technology.");
+    }
 }

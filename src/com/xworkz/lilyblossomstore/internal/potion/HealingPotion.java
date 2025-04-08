@@ -29,4 +29,7 @@ public class HealingPotion extends Potion {
         System.out.println("Child class");
         System.out.println("HealingPotion is made with healing herbs and enchanted water...");
     }
+    public void boostRecovery() {
+        System.out.println("Healing Potion boosts recovery speed.");
+    }
 }

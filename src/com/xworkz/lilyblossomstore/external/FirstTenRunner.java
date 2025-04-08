@@ -124,6 +124,9 @@ public class FirstTenRunner {
         dji.capturePhoto();
         dji.land();
 
+        Aeroplane aeroplane=new Aeroplane();
+        aeroplane.departure(drone1);
+
 
         System.out.println("\n--- 6. EcoFriendlyVehicle Example ---");
         EcoFriendlyVehicle ev = new EcoFriendlyVehicle();

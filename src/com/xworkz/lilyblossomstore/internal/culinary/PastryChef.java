@@ -36,4 +36,7 @@ public class PastryChef extends Chef {
         System.out.println("Child Class");
         System.out.println("Pastry chef is tasting the final pastry...");
     }
+    public void makeChocolate() {
+        System.out.println("PastryChef makes handmade chocolates.");
+    }
 }

@@ -35,4 +35,8 @@ public class Thermos extends Bottle {
         System.out.println("Child Class");
         System.out.println("Checking thermos capacity");
     }
+    public void insulationInfo() {
+        System.out.println("Thermos keeps liquids hot/cold for 12 hours");
+    }
+
 }

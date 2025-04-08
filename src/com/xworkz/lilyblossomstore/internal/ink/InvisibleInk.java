@@ -30,4 +30,7 @@ public class InvisibleInk extends Ink {
         System.out.println("Child Class");
         System.out.println("Used for secret messages and security purposes...");
     }
+    public void revealMessage() {
+        System.out.println("Revealing hidden message using heat or UV light.");
+    }
 }

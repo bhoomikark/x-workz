@@ -29,4 +29,7 @@ public class FireSpell extends Spell {
         System.out.println("Child class");
         System.out.println("Fire spell draws energy from volcanic forces...");
     }
+    public void flameIntensity() {
+        System.out.println("Flame intensity is at maximum level!");
+    }
 }

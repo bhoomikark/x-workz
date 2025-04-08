@@ -35,4 +35,8 @@ public class EngineeringCollege extends University {
         System.out.println("Child class");
         System.out.println("Running engineering research programs...");
     }
+    public void specializationStreams() {
+        System.out.println("Child Class");
+        System.out.println("Specialization in CS, EC, ME, Civil, and more...");
+    }
 }

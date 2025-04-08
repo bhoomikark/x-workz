@@ -37,4 +37,8 @@ public class Guitar extends Instrument {
         System.out.println("Child Class");
         System.out.println("Storing the guitar in a case...");
     }
+    public void showStrings() {
+        System.out.println("Child Class");
+        System.out.println("This guitar has 6 strings.");
+    }
 }

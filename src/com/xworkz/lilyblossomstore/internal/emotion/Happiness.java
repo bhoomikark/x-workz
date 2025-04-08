@@ -36,4 +36,7 @@ public class Happiness extends Emotion {
         System.out.println("Child Class");
         System.out.println("The cause for happiness is satisfaction and good news...");
     }
+    public void shareHappiness() {
+        System.out.println("Happiness increases when shared!");
+    }
 }

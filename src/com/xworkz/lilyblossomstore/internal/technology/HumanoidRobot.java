@@ -36,4 +36,7 @@ public class HumanoidRobot extends Robot {
         System.out.println("Child class");
         System.out.println("Humanoid robot is entering sleep mode...");
     }
+    public void walkLikeHuman() {
+        System.out.println("HumanoidRobot: Walking like a human.");
+    }
 }

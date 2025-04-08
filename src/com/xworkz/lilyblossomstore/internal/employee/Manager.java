@@ -35,4 +35,8 @@ public class Manager extends Employee {
         System.out.println("Child Class");
         System.out.println("Manager is applying for annual leave...");
     }
+    public void takeLeave(){
+        System.out.println("Child Class");
+        System.out.println("Take leave");
+    }
 }

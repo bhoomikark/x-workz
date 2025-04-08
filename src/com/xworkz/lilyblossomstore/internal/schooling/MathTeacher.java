@@ -35,4 +35,7 @@ public class MathTeacher extends Teacher {
         System.out.println("Child class");
         System.out.println("MathTeacher is guiding students with problem solving...");
     }
+    public void solveEquation() {
+        System.out.println("MathTeacher is solving a complex equation.");
+    }
 }
