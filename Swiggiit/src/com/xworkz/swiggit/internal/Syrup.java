@@ -16,4 +16,8 @@ public class Syrup {
     public String toString() {
         return "Brand: " + syrupBrand + ", Taste: " + isSyrupSweetOrSour + ", Color: " + syrupColor;
     }
+    @Override
+    public int hashCode() {
+        return 111;
+    }
 }

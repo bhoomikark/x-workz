@@ -17,4 +17,10 @@ public class FileExplorer {
         return "Number of Folders: " + numberOfFolders + ", Drives Available: " + drivesAvailable +
                 ", Number of Files: " + numberOfFiles;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 333;
+    }
+
 }

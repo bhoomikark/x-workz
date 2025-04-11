@@ -17,4 +17,9 @@ public class Hairband {
         return "Hairband Brand: " + hairbandBrand + ", Hairband Color: " + hairbandColor +
                 ", Hairband Type: " + hairbandType;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 321;
+    }
 }

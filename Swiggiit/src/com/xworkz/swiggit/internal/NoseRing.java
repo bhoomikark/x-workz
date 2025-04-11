@@ -16,4 +16,9 @@ public class NoseRing {
     public String toString() {
         return "Is Gold: " + noseRingGoldOrNot + ", Design: " + noseRingDesign + ", Material: " + noseRingMaterial;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 333;
+    }
 }

@@ -11,8 +11,13 @@ public class Camera {
         this.isDSLR = isDSLR;
         System.out.println("89. Running Camera Constructor");
     }
-
+@Override
     public String toString() {
         return "Brand: " + cameraBrand + ", Resolution: " + resolution + "MP, DSLR: " + isDSLR;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 222;
     }
 }

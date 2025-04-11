@@ -11,8 +11,12 @@ public class Umbrella {
         this.isFoldable = isFoldable;
         System.out.println("91. Running Umbrella Constructor");
     }
-
+@Override
     public String toString() {
         return "Type: " + umbrellaType + ", Color: " + umbrellaColor + ", Foldable: " + isFoldable;
+    }
+    @Override
+    public int hashCode() {
+        return 122;
     }
 }

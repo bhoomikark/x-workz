@@ -17,4 +17,8 @@ public class Uber {
         return "No. of Passengers: " + noOfPassengers + ", Auto/Car Available: " + autoOrCarAvailable +
                 ", Uber Car No: " + uberCarNo;
     }
+    @Override
+    public int hashCode() {
+        return 121;
+    }
 }

@@ -7,5 +7,7 @@ public class CropTopRunner {
         CropTop cropTop = new CropTop("Medium", "Cotton", "Peach");
 
         System.out.println("CropTop to string: " + cropTop.toString());
+        System.out.println("CropTop HashCode: " + cropTop.hashCode());
+        System.out.println("Original HashCode: " + System.identityHashCode(cropTop));
     }
 }

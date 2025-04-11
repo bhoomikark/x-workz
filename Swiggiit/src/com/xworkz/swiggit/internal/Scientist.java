@@ -16,4 +16,9 @@ public class Scientist {
     public String toString() {
         return "Scientist Name: " + scientistName + ", Honors From: " + honorsFrom + ", Achievement: " + scientistAchievement;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 888;
+    }
 }

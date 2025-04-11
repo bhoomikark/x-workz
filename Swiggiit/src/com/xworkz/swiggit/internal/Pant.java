@@ -17,4 +17,9 @@ public class Pant {
         return "Pant Color: " + pantColor + ", Pant Type: " + pantType +
                 ", Is That Pant Gym Attire: " + isThatPantGymAttire;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 888;
+    }
 }

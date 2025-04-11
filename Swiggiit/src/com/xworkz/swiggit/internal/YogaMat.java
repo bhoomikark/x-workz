@@ -11,8 +11,12 @@ public class YogaMat {
         this.isEcoFriendly = isEcoFriendly;
         System.out.println("96. Running Yoga Mat Constructor");
     }
-
+@Override
     public String toString() {
         return "Material: " + matMaterial + ", Color: " + matColor + ", Eco-Friendly: " + isEcoFriendly;
+    }
+    @Override
+    public int hashCode() {
+        return 134;
     }
 }

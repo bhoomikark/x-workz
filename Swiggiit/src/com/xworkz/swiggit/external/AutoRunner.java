@@ -6,5 +6,9 @@ public class AutoRunner {
     public static void main(String[] args) {
         Auto auto = new Auto("Mahindra", true, "Green");
         System.out.println("Auto to string: " + auto.toString());
+
+        System.out.println("Auto: "+auto.hashCode());
+        System.out.println("Original value: "+System.identityHashCode(auto));
+
     }
 }

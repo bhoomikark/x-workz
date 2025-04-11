@@ -17,4 +17,9 @@ public class HandWash {
         return "HandWash Brand: " + handWashBrand + ", Is Made of Chemical: " + isMadeOfChemical +
                 ", Shape of HandWash: " + shapeOfHandWash;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 987;
+    }
 }

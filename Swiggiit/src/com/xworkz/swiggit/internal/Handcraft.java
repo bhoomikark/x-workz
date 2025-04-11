@@ -17,4 +17,9 @@ public class Handcraft {
         return "No. of Handcrafts Made: " + noOfHandcraftMade + ", Handcraft Name: " + handcraftName +
                 ", Material Used: " + handcraftMaterialUsed;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 333;
+    }
 }

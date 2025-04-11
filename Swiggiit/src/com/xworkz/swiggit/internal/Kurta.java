@@ -17,4 +17,9 @@ public class Kurta {
         return "Kurta Design: " + kurtaDesign + ", Kurta Type: " + kurtaType +
                 ", Kurta Color: " + kurtaColor;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 999;
+    }
 }

@@ -17,4 +17,9 @@ public class Holder {
         return "Material Used: " + materialUsed + ", No of Nuts Used: " + noOfNutsUsed +
                 ", Color: " + color;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 987;
+    }
 }

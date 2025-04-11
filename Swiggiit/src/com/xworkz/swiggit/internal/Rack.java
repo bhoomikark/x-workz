@@ -17,4 +17,9 @@ public class Rack {
         return "Rack Material: " + rackMaterial + ", Number of Racks: " + numberOfRacks +
                 ", Color of Rack: " + colorOfRack;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 555;
+    }
 }

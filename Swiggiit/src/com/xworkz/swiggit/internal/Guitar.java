@@ -11,8 +11,13 @@ public class Guitar {
         this.isElectric = isElectric;
         System.out.println("92. Running Guitar Constructor");
     }
-
+@Override
     public String toString() {
         return "Type: " + guitarType + ", Strings: " + noOfStrings + ", Electric: " + isElectric;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 999;
     }
 }

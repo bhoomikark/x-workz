@@ -11,8 +11,13 @@ public class Curtains {
         this.curtonColor = curtonColor;
         System.out.println("79. Running Curtains Constructor");
     }
-
+@Override
     public String toString() {
         return "Type: " + curtonType + ", Price: ₹" + curtonPrice + ", Color: " + curtonColor;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 777;
     }
 }

@@ -16,4 +16,8 @@ public class Trainer {
     public String toString() {
         return "Trainer Name: " + trainerName + ", Domain: " + trainerDomain + ", Present: " + isTrainerPresentOrNot;
     }
+    @Override
+    public int hashCode() {
+        return 117;
+    }
 }

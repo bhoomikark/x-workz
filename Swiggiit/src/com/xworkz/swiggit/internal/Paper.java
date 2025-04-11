@@ -17,4 +17,9 @@ public class Paper {
         return "Paper Name: " + paperName + ", Paper Language: " + paperLanguage +
                 ", No of Paper Bought: " + noOfPaperBought;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 999;
+    }
 }

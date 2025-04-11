@@ -11,8 +11,13 @@ public class Key {
         this.isDuplicate = isDuplicate;
         System.out.println("75. Running Key Constructor");
     }
-
+@Override
     public String toString() {
         return "Key ID: " + keyId + ", Length: " + lengthInCm + " cm, Is Duplicate: " + isDuplicate;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 789;
     }
 }

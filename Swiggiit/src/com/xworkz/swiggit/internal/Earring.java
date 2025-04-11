@@ -17,4 +17,9 @@ public class Earring {
         return "Earring Color: " + earringColor + ", Earring Shape: " + earringShape +
                 ", Made Up Of: " + earringMadeUpOf;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 222;
+    }
 }

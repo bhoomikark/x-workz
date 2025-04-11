@@ -17,4 +17,8 @@ public class WoodenDoor {
         return "Wooden Door Type: " + woodenDoorType + ", Material Used: " + materialUsed +
                 ", Design: " + design;
     }
+    @Override
+    public int hashCode() {
+        return 654;
+    }
 }

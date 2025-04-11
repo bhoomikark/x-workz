@@ -16,4 +16,8 @@ public class SweetHouse {
     public String toString() {
         return "Types of Sweets: " + typeOfSweetsAvailable + ", No of Sweets: " + noOfSweets + ", Famous Sweet: " + famousSweet;
     }
+    @Override
+    public int hashCode() {
+        return 109;
+    }
 }

@@ -17,4 +17,9 @@ public class RubberBand {
         return "RubberBand Color: " + rubberBandColor + ", RubberBand Type: " + rubberBandType +
                 ", Is Bow RubberBand: " + isBowRubberBand;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 97;
+    }
 }

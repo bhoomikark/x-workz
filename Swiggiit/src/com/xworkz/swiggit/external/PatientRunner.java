@@ -6,5 +6,7 @@ public class PatientRunner {
     public static void main(String[] args) {
         Patient patient = new Patient("Rahul", 1023, "Flu");
         System.out.println(patient);
+        System.out.println("Overridden HashCode: " + patient.hashCode());
+        System.out.println("Original HashCode using identityHashCode: " + System.identityHashCode(patient));
     }
 }

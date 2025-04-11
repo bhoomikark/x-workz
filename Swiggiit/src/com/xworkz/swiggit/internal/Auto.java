@@ -17,4 +17,11 @@ public class Auto {
         return "Auto Brand: " + autoBrand + ", Is Auto Electric: " + isAutoElectric +
                 ", Auto Color: " + autoColor;
     }
-}
+        @Override
+                public int hashCode()
+        {
+            System.out.println("Default Hashcode: "+super.hashCode());
+            return 99;
+        }
+    }
+

@@ -16,4 +16,9 @@ public class Pipe {
     public String toString() {
         return "Pipe Type: " + pipeType + ", Pipe No: " + pipeNo + ", Pipe Brand: " + pipeBrand;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 555;
+    }
 }

@@ -11,8 +11,13 @@ public class PlantPot {
         this.isIndoor = isIndoor;
         System.out.println("99. Running Plant Pot Constructor");
     }
-
+@Override
     public String toString() {
         return "Material: " + potMaterial + ", Plant: " + plantType + ", Indoor: " + isIndoor;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 606;
     }
 }

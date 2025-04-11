@@ -18,4 +18,8 @@ public class Worker {
                 ", Domain: " + workerDomain +
                 ", Number of Workers: " + noOfWorkers;
     }
+    @Override
+    public int hashCode() {
+        return 12;
+    }
 }

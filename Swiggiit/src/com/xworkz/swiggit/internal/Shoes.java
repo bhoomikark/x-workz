@@ -17,4 +17,9 @@ public class Shoes {
         return "Shoe Brand: " + shoeBrand + ", Is Formal: " + isFormal +
                 ", Shoe Color: " + shoeColor;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 77;
+    }
 }

@@ -17,4 +17,9 @@ public class Desert {
         return "Desert Type: " + desertType + ", Desert No: " + desertNo +
                 ", Toppings: " + toppings;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 888;
+    }
 }

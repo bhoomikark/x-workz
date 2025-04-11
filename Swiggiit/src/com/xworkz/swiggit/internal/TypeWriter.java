@@ -17,4 +17,8 @@ public class TypeWriter {
         return "No. of TypeWriters: " + noOfTypeWriter + ", Working: " + isThatTypeWriterWorking +
                 ", TypeWriter Type: " + typeWriterType;
     }
+    @Override
+    public int hashCode() {
+        return 120;
+    }
 }

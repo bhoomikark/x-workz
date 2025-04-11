@@ -6,5 +6,7 @@ public class CameraRunner {
     public static void main(String[] args) {
         Camera camera = new Camera("Canon", 24.2, true);
         System.out.println(camera);
+        System.out.println("Camera HashCode: " + camera.hashCode());
+        System.out.println("Original HashCode: " + System.identityHashCode(camera));
     }
 }

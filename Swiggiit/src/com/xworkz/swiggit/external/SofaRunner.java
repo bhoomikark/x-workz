@@ -6,5 +6,7 @@ public class SofaRunner {
     public static void main(String[] args) {
         Sofa sofa = new Sofa((byte) 3, true, 72);
         System.out.println(sofa);
+        System.out.println("Overridden HashCode: " + sofa.hashCode());
+        System.out.println("Original HashCode using identityHashCode: " + System.identityHashCode(sofa));
     }
 }

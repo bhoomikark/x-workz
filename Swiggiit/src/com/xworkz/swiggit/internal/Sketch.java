@@ -16,4 +16,9 @@ public class Sketch {
     public String toString() {
         return "Pencils Needed: " + sketchPencilsNeeded + ", Sketches Done: " + noOfSketchesDone + ", Pencil Type: " + pencilOrDrawingPencil;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 303;
+    }
 }

@@ -11,8 +11,13 @@ public class Flashlight {
         this.isRechargeable = isRechargeable;
         System.out.println("97. Running Flashlight Constructor");
     }
-
+@Override
     public String toString() {
         return "Type: " + flashlightType + ", Battery Life: " + batteryLife + " hrs, Rechargeable: " + isRechargeable;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 444;
     }
 }

@@ -17,4 +17,9 @@ public class Logo {
         return "Logo No: " + logoNo + ", Is Brand Logo: " + isThisLogoABrand +
                 ", Created Using: " + logoCreation;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 30;
+    }
 }

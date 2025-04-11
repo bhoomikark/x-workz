@@ -17,4 +17,9 @@ public class Bottle {
         return "Bottle Type: " + bottleType + ", Is Bislery: " + isBislery +
                 ", Bottle Color: " + bottleColor;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 777;
+    }
 }

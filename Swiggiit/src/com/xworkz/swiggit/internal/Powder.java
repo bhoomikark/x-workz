@@ -11,8 +11,13 @@ public class Powder {
         this.noOfPowder = noOfPowder;
         System.out.println("73. Running Powder Constructor");
     }
-
+@Override
     public String toString() {
         return "Brand: " + powderBrand + ", Type: " + powderType + ", Count: " + noOfPowder;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 454;
     }
 }

@@ -11,8 +11,12 @@ public class WildcraftBags {
         this.areTrolleysAvailable = areTrolleysAvailable;
         System.out.println("78. Running WildcraftBags Constructor");
     }
-
+@Override
     public String toString() {
         return "Quality: " + quality + ", Price: ₹" + price + ", Trolleys Available: " + areTrolleysAvailable;
+    }
+    @Override
+    public int hashCode() {
+        return 529;
     }
 }

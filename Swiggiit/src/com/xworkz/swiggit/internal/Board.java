@@ -17,4 +17,9 @@ public class Board {
         return "Type of Board: " + typeOfBoard + ", Color of Board: " + colorOfBoard +
                 ", No of Boards: " + noOfBoards;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 666;
+    }
 }

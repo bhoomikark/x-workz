@@ -15,4 +15,8 @@ public class Sofa {
     public String toString() {
         return "Seats: " + numberOfSeats + ", Recliner: " + isRecliner + ", Length: " + sofaLengthInInches + " inches";
     }
+    @Override
+    public int hashCode() {
+        return 105;
+    }
 }

@@ -17,4 +17,8 @@ public class Tarzen {
         return "Movie Hit or Flop: " + tarzenMovieHitOrFlop + ", Is Real: " + isTarzenMovieRealOrNot +
                 ", No. of Times Watched: " + noOfTimesMovieWatched;
     }
+    @Override
+    public int hashCode() {
+        return 112;
+    }
 }

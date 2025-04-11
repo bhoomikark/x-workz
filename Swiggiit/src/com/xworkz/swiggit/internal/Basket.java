@@ -11,8 +11,13 @@ public class Basket {
         this.basketColor = basketColor;
         System.out.println("74. Running Basket Constructor");
     }
-
+@Override
     public String toString() {
         return "Type: " + basketType + ", Made Of: " + basketMadeUpOf + ", Color: " + basketColor;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 222;
     }
 }

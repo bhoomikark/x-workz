@@ -11,8 +11,13 @@ public class Pencil {
         this.isSharpened = isSharpened;
         System.out.println("84. Running Pencil Constructor");
     }
-
+@Override
     public String toString() {
         return "Brand: " + brand + ", Type: " + pencilType + ", Sharpened: " + isSharpened;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 888;
     }
 }

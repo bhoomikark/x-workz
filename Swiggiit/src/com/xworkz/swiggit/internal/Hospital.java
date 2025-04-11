@@ -19,4 +19,9 @@ public class Hospital {
                 ", Wards: " + hospitalWards +
                 ", Is Multispeciality: " + isItMultispecialityHospitalOrNot;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 456;
+    }
 }

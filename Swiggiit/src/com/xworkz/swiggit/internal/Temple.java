@@ -11,8 +11,12 @@ public class Temple {
         this.godName = godName;
         System.out.println("76. Running Temple Constructor");
     }
-
+@Override
     public String toString() {
         return "Temple Name: " + templeName + ", Distance: " + templeDistance + " km, God: " + godName;
+    }
+    @Override
+    public int hashCode() {
+        return 115;
     }
 }

@@ -6,5 +6,7 @@ public class PosterRunner {
     public static void main(String[] args) {
         Poster poster = new Poster(3, "Motivational", "Dream Big");
         System.out.println("Poster to string: " + poster.toString());
+        System.out.println("Overridden HashCode: " + poster.hashCode());
+        System.out.println("Original HashCode using identityHashCode: " + System.identityHashCode(poster));
     }
 }

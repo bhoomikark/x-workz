@@ -11,8 +11,14 @@ public class Puzzle {
         this.is3D = is3D;
         System.out.println("98. Running Puzzle Constructor");
     }
-
+@Override
     public String toString() {
         return "Name: " + puzzleName + ", Pieces: " + pieces + ", 3D: " + is3D;
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 444;
     }
 }

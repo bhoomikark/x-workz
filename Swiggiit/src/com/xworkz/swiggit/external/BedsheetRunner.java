@@ -8,5 +8,7 @@ BedsheetRunner {
         Bedsheet bedsheet = new Bedsheet("White", 3, "Floral");
 
         System.out.println("Bedsheet to string: " + bedsheet.toString());
+        System.out.println("Bedsheet HashCode: " + bedsheet.hashCode());
+        System.out.println("Original HashCode: " + System.identityHashCode(bedsheet));
     }
 }

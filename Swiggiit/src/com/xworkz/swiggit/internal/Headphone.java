@@ -11,8 +11,13 @@ public class Headphone {
         this.price = price;
         System.out.println("81. Running Headphone Constructor");
     }
-
+@Override
     public String toString() {
         return "Brand: " + headphoneBrand + ", Wireless: " + isWireless + ", Price: ₹" + price;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 321;
     }
 }

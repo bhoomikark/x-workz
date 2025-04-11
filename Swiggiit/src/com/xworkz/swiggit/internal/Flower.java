@@ -17,4 +17,9 @@ public class Flower {
         return "Flower Name: " + flowerName + ", Flower Type: " + flowerType +
                 ", Flower Florescence: " + flowerFlorescence;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 999;
+    }
 }

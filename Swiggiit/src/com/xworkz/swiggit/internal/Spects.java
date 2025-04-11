@@ -17,4 +17,8 @@ public class Spects {
         return "Spects Type: " + spectsType + ", Material: " + spectsMaterial +
                 ", No. of Spects Bought: " + noOfSpectsYouHaveBought;
     }
+    @Override
+    public int hashCode() {
+        return 106;
+    }
 }

@@ -17,4 +17,9 @@ public class CropTop {
         return "Top Size: " + topSize + ", Cloth Type: " + clothType +
                 ", Color of CropTop: " + colorOfCropTop;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 444;
+    }
 }

@@ -17,4 +17,9 @@ public class Pillow {
         return "Pillow Cover: " + pillowCover + ", Pillow Brand: " + pillowBrand +
                 ", Pillow Design: " + pillowDesign;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 450;
+    }
 }

@@ -17,4 +17,9 @@ public class Puppet {
         return "Number of Puppet Shows: " + numberOfPuppetShows + ", Puppet Act Name: " + puppetActName +
                 ", Puppet Show Place: " + puppetShowPlace;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 999;
+    }
 }

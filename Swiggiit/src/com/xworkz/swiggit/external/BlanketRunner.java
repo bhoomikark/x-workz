@@ -6,5 +6,7 @@ public class BlanketRunner {
     public static void main(String[] args) {
         Blanket blanket = new Blanket("Maroon", "Woolen", 2);
         System.out.println("Blanket to string: " + blanket.toString());
+        System.out.println("Blanket HashCode: " + blanket.hashCode());
+        System.out.println("Original HashCode: " + System.identityHashCode(blanket));
     }
 }

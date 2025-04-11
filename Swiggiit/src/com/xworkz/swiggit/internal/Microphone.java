@@ -17,4 +17,9 @@ public class Microphone {
         return "Microphone Brand: " + microphoneBrand + ", Microphone Frequency: " + microphoneFrequency +
                 " Hz, Color of Microphone: " + colorOfMicrophone;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 888;
+    }
 }

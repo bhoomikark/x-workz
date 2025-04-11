@@ -17,4 +17,9 @@ public class Projector {
         return "Projector Shape: " + projectorShape + ", 5-Star Rated: " + isProjectorHaving5Star +
                 ", Projector Brand: " + projectorBrand;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 818;
+    }
 }

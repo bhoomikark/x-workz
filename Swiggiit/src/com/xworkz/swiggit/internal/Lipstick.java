@@ -16,4 +16,10 @@ public class Lipstick {
     public String toString() {
         return "Lipstick Brand: " + lipstickBrand + ", Owner Name: " + ownerName + ", Number of Shades: " + noOfShadesAvailable;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 525;
+    }
 }

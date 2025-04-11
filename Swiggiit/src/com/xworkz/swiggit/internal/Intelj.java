@@ -17,4 +17,9 @@ public class Intelj {
         return "Intelj Folders: " + inteljFolders + ", Number of Files: " + numberOfFiles +
                 ", Number of Projects Created: " + numberOfProjectsCreated;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 789;
+    }
 }

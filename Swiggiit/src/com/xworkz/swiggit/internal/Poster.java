@@ -17,4 +17,9 @@ public class Poster {
         return "Number of Posters: " + numberOfPoster + ", Poster Type: " + posterType +
                 ", Poster Name: " + posterName;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 909;
+    }
 }

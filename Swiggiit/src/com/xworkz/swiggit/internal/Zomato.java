@@ -17,4 +17,8 @@ public class Zomato {
         return "Track Order: " + zomatoTrackOrder + ", Total Items Bought: " + totalItemsBought +
                 ", Items Name: " + itemsName;
     }
+    @Override
+    public int hashCode() {
+        return 57;
+    }
 }

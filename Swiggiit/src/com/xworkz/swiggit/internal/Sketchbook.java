@@ -15,4 +15,9 @@ public class Sketchbook {
     public String toString() {
         return "Pages: " + noOfPages + ", Size: " + sketchbookSize + ", HardBound: " + isHardBound;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 121;
+    }
 }

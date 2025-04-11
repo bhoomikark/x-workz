@@ -15,4 +15,8 @@ public class Telescope {
     public String toString() {
         return "Type: " + telescopeType + ", Magnification: " + magnification + "x, Portable: " + isPortable;
     }
+    @Override
+    public int hashCode() {
+        return 114;
+    }
 }

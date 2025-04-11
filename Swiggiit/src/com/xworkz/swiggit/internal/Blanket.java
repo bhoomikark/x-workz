@@ -17,4 +17,9 @@ public class Blanket {
         return "Blanket Color: " + blanketColor + ", Blanket Type: " + blanketType +
                 ", Blanket No: " + blanketNo;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 444;
+    }
 }

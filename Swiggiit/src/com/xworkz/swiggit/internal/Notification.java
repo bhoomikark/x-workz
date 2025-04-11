@@ -18,4 +18,9 @@ public class Notification {
                 ", From: " + notificationsFrom +
                 ", Type: " + notificationType;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 567;
+    }
 }

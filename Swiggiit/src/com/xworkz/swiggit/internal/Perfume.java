@@ -18,4 +18,9 @@ public class Perfume {
                 ", Brand: " + perfumeBrand +
                 ", Type: " + perfumeType;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 77;
+    }
 }

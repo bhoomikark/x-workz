@@ -16,4 +16,10 @@ public class Fruit {
     public String toString() {
         return "Fruit Name: " + fruitName + ", Quantity: " + fruitNo + ", Is Rotten: " + fruitIsRottenOrNot;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 444;
+    }
 }

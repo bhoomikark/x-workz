@@ -11,8 +11,13 @@ public class Door {
         this.isAutomatic = isAutomatic;
         System.out.println("86. Running Door Constructor");
     }
-
+@Override
     public String toString() {
         return "Door Type: " + doorType + ", Material: " + doorMaterial + ", Automatic: " + isAutomatic;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 55;
     }
 }

@@ -17,4 +17,9 @@ public class Bucket {
         return "Bucket Color: " + bucketColor + ", Bucket Brand: " + bucketBrand +
                 ", Bucket Shape: " + bucketShape;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 999;
+    }
 }

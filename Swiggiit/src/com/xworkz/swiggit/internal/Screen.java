@@ -17,4 +17,10 @@ public class Screen {
         return "Screen Type: " + screenType + ", Screen Material: " + screenMaterial +
                 ", Screen Shape: " + screenShape;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 999;
+    }
 }

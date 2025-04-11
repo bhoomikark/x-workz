@@ -17,4 +17,9 @@ public class Cup {
         return "Cup Material: " + cupMaterial + ", Cup Shape: " + cupShape +
                 ", Cup Size: " + cupSize;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 666;
+    }
 }

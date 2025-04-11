@@ -6,5 +6,7 @@ public class NoseRingRunner {
     public static void main(String[] args) {
         NoseRing noseRing = new NoseRing(true, "Floral", "Gold");
         System.out.println("NoseRing to string: " + noseRing.toString());
+        System.out.println("Overridden HashCode: " + noseRing.hashCode());
+        System.out.println("Original HashCode using identityHashCode: " + System.identityHashCode(noseRing));
     }
 }

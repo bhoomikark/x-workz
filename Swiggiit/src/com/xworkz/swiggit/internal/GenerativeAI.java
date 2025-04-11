@@ -17,4 +17,9 @@ public class GenerativeAI {
         return "Names of Generative AI: " + namesOfGenAI + ", Task of AI: " + taskOfAI +
                 ", Model Type: " + modelType;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 444;
+    }
 }

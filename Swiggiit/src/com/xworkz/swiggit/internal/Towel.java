@@ -16,5 +16,9 @@ public class Towel {
     {
         return "String Type is "+type+ ",No of Towel is " +noOfTowel+",The color of Thread used is "+colorOfThreadUsed;
     }
+    @Override
+    public int hashCode() {
+        return 116;
+    }
 
 }

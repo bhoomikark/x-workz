@@ -7,5 +7,7 @@ public class ShoeRunner {
         Shoes shoes = new Shoes("Bata", true, "Black");
 
         System.out.println("Shoe to string: " + shoes.toString());
+        System.out.println("Overridden HashCode: " + shoes.hashCode());
+        System.out.println("Original HashCode using identityHashCode: " + System.identityHashCode(shoes));
     }
 }

@@ -16,5 +16,12 @@ public class Bedsheet {
     public String toString() {
         return "Bedsheet Color is " + bedsheetColor + ", No of Bedsheets is " + noOfBedsheet +
                 ", Bedsheet Design is " + bedsheetDesign;
+
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 333;
     }
 }

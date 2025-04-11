@@ -11,8 +11,13 @@ public class Oil {
         this.isEdible = isEdible;
         System.out.println("90. Running Oil Constructor");
     }
-
+@Override
     public String toString() {
         return "Oil Type: " + oilType + ", Brand: " + oilBrand + ", Edible: " + isEdible;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 777;
     }
 }

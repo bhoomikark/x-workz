@@ -17,4 +17,8 @@ public class Teacher {
         return "Teacher Name: " + teacherName + ", Teacher Salary: " + teacherSalary +
                 ", Teacher Subject: " + teacherSubject;
     }
+    @Override
+    public int hashCode() {
+        return 113;
+    }
 }

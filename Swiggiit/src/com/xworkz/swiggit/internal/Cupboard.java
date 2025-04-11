@@ -16,4 +16,9 @@ public class Cupboard {
     public String toString() {
         return "Material: " + cupboardMaterial + ", Shelves: " + noOfShelves + ", Color: " + cupboardColor;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 555;
+    }
 }

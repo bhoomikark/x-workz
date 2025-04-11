@@ -17,4 +17,10 @@ public class Barbie {
         return "Barbie Movie Name: " + barbieMovieName + ", Hosted Channel: " + hostedChannel +
                 ", Available in Theatres: " + isAvailableInTheatres;
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 111;
+    }
 }

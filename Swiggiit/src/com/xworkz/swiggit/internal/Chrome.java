@@ -17,4 +17,9 @@ public class Chrome {
         return "Available Accounts: " + availableAccounts + ", Account Name: " + accountName +
                 ", Number of Accounts: " + numberOfAccounts;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 333;
+    }
 }

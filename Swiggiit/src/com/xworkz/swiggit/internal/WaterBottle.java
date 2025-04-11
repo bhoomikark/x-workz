@@ -15,4 +15,8 @@ public class WaterBottle {
     public String toString() {
         return "Color: " + waterBottleColor + ", Brand: " + brand + ", Type: " + type;
     }
+    @Override
+    public int hashCode() {
+        return 321;
+    }
 }

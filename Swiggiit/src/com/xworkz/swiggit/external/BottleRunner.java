@@ -7,5 +7,7 @@ public class BottleRunner {
         Bottle bottle = new Bottle("Plastic", true, "Transparent");
 
         System.out.println("Bottle to string: " + bottle.toString());
+        System.out.println("Bottle HashCode: " + bottle.hashCode());
+        System.out.println("Original HashCode: " + System.identityHashCode(bottle));
     }
 }

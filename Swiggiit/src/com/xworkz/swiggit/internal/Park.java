@@ -17,4 +17,9 @@ public class Park {
         return "Number of Parks in Your Area: " + numberOfParksInYourArea + ", Toys Available: " + toysAvailable +
                 ", Is That Spacious: " + isThatSpacious;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 777;
+    }
 }

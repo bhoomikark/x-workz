@@ -16,4 +16,8 @@ public class Socks {
     public String toString() {
         return "Socks Color: " + socksColor + ", Number of Socks Bought: " + noOfSocksBought + ", Material Used: " + socksMaterialUsed;
     }
+    @Override
+    public int hashCode() {
+        return 104;
+    }
 }

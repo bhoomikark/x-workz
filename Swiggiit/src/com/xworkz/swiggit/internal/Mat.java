@@ -17,4 +17,9 @@ public class Mat {
         return "Mat Color: " + matColor + ", Number of Threads Used: " + numberOfThreadsUsed +
                 ", Mat Shape: " + matShape;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 707;
+    }
 }

@@ -11,8 +11,13 @@ public class MicrowaveOven {
         this.hasGrill = hasGrill;
         System.out.println("93. Running Microwave Oven Constructor");
     }
-
+@Override
     public String toString() {
         return "Brand: " + brand + ", Capacity: " + capacity + "L, Grill: " + hasGrill;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 456;
     }
 }

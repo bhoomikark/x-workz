@@ -16,4 +16,9 @@ public class Brother {
     public String toString() {
         return "Brother Name: " + brotherName + ", Number of Elder Siblings: " + noOfElderSiblings + ", Education: " + brotherEducation;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 888;
+    }
 }

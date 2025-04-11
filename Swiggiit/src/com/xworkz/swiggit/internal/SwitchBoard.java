@@ -17,4 +17,8 @@ public class SwitchBoard {
         return "No of Switches: " + noOfSwitches + ", Switch Brand: " + switchBrand +
                 ", No of Sockets: " + noOfSockets;
     }
+    @Override
+    public int hashCode() {
+        return 110;
+    }
 }

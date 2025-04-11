@@ -16,4 +16,9 @@ public class HairOil {
     public String toString() {
         return "Oil Brand: " + oilBrand + ", Cost: ₹" + cost + ", Volume: " + ml + "ml";
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 222;
+    }
 }

@@ -17,4 +17,8 @@ public class Sunlight {
         return "Is Sunlight Less Today: " + isSunlightLessToday + ", Sunlight Wavelength: " + sunlightWavelength +
                 ", Frequency: " + frequency + " Hz";
     }
+    @Override
+    public int hashCode() {
+        return 108;
+    }
 }

@@ -11,8 +11,12 @@ public class Whitener {
         this.isRefillable = isRefillable;
         System.out.println("85. Running Whitener Constructor");
     }
-
+@Override
     public String toString() {
         return "Brand: " + whitenerBrand + ", Form: " + formType + ", Refillable: " + isRefillable;
+    }
+    @Override
+    public int hashCode() {
+        return 789;
     }
 }

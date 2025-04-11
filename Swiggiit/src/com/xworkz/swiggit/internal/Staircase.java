@@ -17,4 +17,8 @@ public class Staircase {
         return "No of Stairs: " + noOfStairs + ", Is tyle Applied: " + istyleApplied +
                 ", Type of Stair: " + typeOfStair;
     }
+    @Override
+    public int hashCode() {
+        return 107;
+    }
 }

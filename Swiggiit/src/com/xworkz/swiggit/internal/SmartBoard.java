@@ -17,4 +17,8 @@ public class SmartBoard {
         return "SmartBoard Type: " + smartBoardType + ", Shape: " + smartBoardShape +
                 ", Material: " + smartBoardMaterial;
     }
+    @Override
+    public int hashCode() {
+        return 302;
+    }
 }

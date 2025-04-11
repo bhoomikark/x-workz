@@ -11,8 +11,13 @@ public class JeansPant {
         this.jeansPantColor = jeansPantColor;
         System.out.println("71. Running JeansPant Constructor");
     }
-
+@Override
     public String toString() {
         return "Type: " + jeansPantType + ", Material: " + jeansPantMadeUpOf + ", Color: " + jeansPantColor;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 505;
     }
 }

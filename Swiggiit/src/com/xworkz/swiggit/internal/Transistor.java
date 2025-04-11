@@ -16,4 +16,8 @@ public class Transistor {
     public String toString() {
         return "Transistor Type: " + transistorType + ", Material: " + transistorMaterial + ", Shape: " + transistorShape;
     }
+    @Override
+    public int hashCode() {
+        return 119;
+    }
 }

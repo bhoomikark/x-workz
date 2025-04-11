@@ -17,4 +17,9 @@ public class Gmail {
         return "Gmail Account: " + gmailAccount + ", Account Name: " + accountName +
                 ", Logout Option Available: " + gmailLogoutOption;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 777;
+    }
 }

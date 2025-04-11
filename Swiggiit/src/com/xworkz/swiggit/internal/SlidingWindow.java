@@ -17,4 +17,9 @@ public class SlidingWindow {
         return "SlidingWindow Shape: " + slidingWindowShape + ", Material: " + material +
                 ", No. of Window Fittable: " + noOfWindowFittable;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 404;
+    }
 }

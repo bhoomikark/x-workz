@@ -11,8 +11,12 @@ public class VidhanaSoudha {
         this.location = location;
         System.out.println("77. Running VidhanaSoudha Constructor");
     }
-
+@Override
     public String toString() {
         return "Members: " + members + ", Rules: " + rules + ", Location: " + location;
+    }
+    @Override
+    public int hashCode() {
+        return 125;
     }
 }

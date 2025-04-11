@@ -11,8 +11,13 @@ public class BoardGame {
         this.isStrategyBased = isStrategyBased;
         System.out.println("100. Running Board Game Constructor");
     }
-
+@Override
     public String toString() {
         return "Game: " + gameName + ", Players: " + noOfPlayers + ", Strategy: " + isStrategyBased;
+    }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 555;
     }
 }

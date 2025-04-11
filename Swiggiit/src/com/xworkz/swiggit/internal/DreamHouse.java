@@ -17,4 +17,9 @@ public class DreamHouse {
         return "Hall Placement: " + hallPlacement + ", Kitchen Type: " + kitchen +
                 ", Number of Rooms: " + noOfRooms;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default Hashcode: " + super.hashCode());
+        return 111;
+    }
 }

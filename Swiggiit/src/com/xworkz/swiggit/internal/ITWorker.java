@@ -18,4 +18,9 @@ public class ITWorker {
                 ", Job: " + itWorkerJob +
                 ", Domain: " + itWorkerDomain;
     }
+    @Override
+    public int hashCode() {
+        System.out.println("Default HashCode: " + super.hashCode());
+        return 303;
+    }
 }
