@@ -22,4 +22,23 @@ public class SlidingWindow {
         System.out.println("Default HashCode: " + super.hashCode());
         return 404;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof SlidingWindow) {
+                System.out.println("SlidingWindow is reference of object");
+                SlidingWindow sw1 = this;
+                SlidingWindow sw2 = (SlidingWindow) obj;
+
+                if (sw1.slidingWindowShape.equals(sw2.slidingWindowShape)
+                        && sw1.material.equals(sw2.material)) {
+                    System.out.println("Both SlidingWindows are same (based on shape and material)");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

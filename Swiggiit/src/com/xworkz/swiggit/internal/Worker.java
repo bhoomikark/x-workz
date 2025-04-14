@@ -22,4 +22,12 @@ public class Worker {
     public int hashCode() {
         return 12;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Worker) {
+            Worker other = (Worker) obj;
+            return this.workerName.equals(other.workerName) && this.workerDomain.equals(other.workerDomain);
+        }
+        return false;
+    }
 }

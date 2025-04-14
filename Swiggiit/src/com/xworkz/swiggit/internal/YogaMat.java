@@ -19,4 +19,14 @@ public class YogaMat {
     public int hashCode() {
         return 134;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof YogaMat) {
+            YogaMat other = (YogaMat) obj;
+            return this.matMaterial.equals(other.matMaterial) && this.matColor.equals(other.matColor);
+        }
+        return false;
+    }
+
+
 }

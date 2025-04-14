@@ -20,4 +20,23 @@ public class Syrup {
     public int hashCode() {
         return 111;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Syrup) {
+                System.out.println("Syrup is reference of object");
+                Syrup syrup1 = this;
+                Syrup syrup2 = (Syrup) obj;
+
+
+                if (syrup1.syrupBrand.equals(syrup2.syrupBrand) &&
+                        syrup1.isSyrupSweetOrSour.equals(syrup2.isSyrupSweetOrSour)) {
+                    System.out.println("Both Syrup objects are the same (based on Brand and Sweet/Sour)");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

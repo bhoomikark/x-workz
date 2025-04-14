@@ -17,8 +17,29 @@ public class SwitchBoard {
         return "No of Switches: " + noOfSwitches + ", Switch Brand: " + switchBrand +
                 ", No of Sockets: " + noOfSockets;
     }
+
     @Override
     public int hashCode() {
         return 110;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof SwitchBoard) {
+                System.out.println("SwitchBoard is reference of object");
+                SwitchBoard switchBoard1 = this;
+                SwitchBoard switchBoard2 = (SwitchBoard) obj;
+
+
+                if (switchBoard1.noOfSwitches == switchBoard2.noOfSwitches &&
+                        switchBoard1.switchBrand.equals(switchBoard2.switchBrand)) {
+                    System.out.println("Both SwitchBoard objects are the same (based on Number of Switches and Switch Brand)");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

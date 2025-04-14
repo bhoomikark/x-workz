@@ -21,4 +21,18 @@ public class TypeWriter {
     public int hashCode() {
         return 120;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof TypeWriter) {
+            TypeWriter typeWriter1 = this;
+            TypeWriter typeWriter2 = (TypeWriter) obj;
+
+            if (typeWriter1.noOfTypeWriter == typeWriter2.noOfTypeWriter &&
+                    typeWriter1.isThatTypeWriterWorking == typeWriter2.isThatTypeWriterWorking &&
+                    typeWriter1.typeWriterType.equals(typeWriter2.typeWriterType)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

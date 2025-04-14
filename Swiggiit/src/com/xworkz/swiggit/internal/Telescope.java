@@ -19,4 +19,16 @@ public class Telescope {
     public int hashCode() {
         return 114;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Telescope) {
+            Telescope telescope1 = this;
+            Telescope telescope2 = (Telescope) obj;
+
+            if (telescope1.telescopeType.equals(telescope2.telescopeType) && telescope1.magnification == telescope2.magnification) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

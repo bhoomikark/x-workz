@@ -21,4 +21,18 @@ public class Tarzen {
     public int hashCode() {
         return 112;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Tarzen) {
+            Tarzen tarzen1 = this;
+            Tarzen tarzen2 = (Tarzen) obj;
+
+
+            if (tarzen1.tarzenMovieHitOrFlop.equals(tarzen2.tarzenMovieHitOrFlop) &&
+                    tarzen1.noOfTimesMovieWatched == tarzen2.noOfTimesMovieWatched) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

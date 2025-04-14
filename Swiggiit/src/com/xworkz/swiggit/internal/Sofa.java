@@ -19,4 +19,21 @@ public class Sofa {
     public int hashCode() {
         return 105;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Sofa) {
+                System.out.println("Sofa is reference of object");
+                Sofa sofa1 = this;
+                Sofa sofa2 = (Sofa) obj;
+                if (sofa1.numberOfSeats == sofa2.numberOfSeats &&
+                        sofa1.sofaLengthInInches == sofa2.sofaLengthInInches) {
+                    System.out.println("Both sofas are same (based on seats and length)");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -19,4 +19,12 @@ public class WaterBottle {
     public int hashCode() {
         return 321;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof WaterBottle) {
+            WaterBottle other = (WaterBottle) obj;
+            return this.waterBottleColor.equals(other.waterBottleColor) && this.brand.equals(other.brand);
+        }
+        return false;
+    }
 }

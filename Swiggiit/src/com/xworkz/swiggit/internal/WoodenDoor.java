@@ -21,4 +21,12 @@ public class WoodenDoor {
     public int hashCode() {
         return 654;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof WoodenDoor) {
+            WoodenDoor other = (WoodenDoor) obj;
+            return this.woodenDoorType.equals(other.woodenDoorType) && this.materialUsed.equals(other.materialUsed);
+        }
+        return false;
+    }
 }

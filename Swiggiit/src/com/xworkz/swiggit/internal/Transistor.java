@@ -20,4 +20,19 @@ public class Transistor {
     public int hashCode() {
         return 119;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Transistor) {
+            Transistor transistor1 = this;
+            Transistor transistor2 = (Transistor) obj;
+
+
+            if (transistor1.transistorType.equals(transistor2.transistorType) &&
+                    transistor1.transistorMaterial.equals(transistor2.transistorMaterial) &&
+                    transistor1.transistorShape.equals(transistor2.transistorShape)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }

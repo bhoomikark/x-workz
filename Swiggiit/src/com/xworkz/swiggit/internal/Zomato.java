@@ -21,4 +21,17 @@ public class Zomato {
     public int hashCode() {
         return 57;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Zomato) {
+                Zomato other = (Zomato) obj;
+                if (this.zomatoTrackOrder == other.zomatoTrackOrder && this.totalItemsBought == other.totalItemsBought) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

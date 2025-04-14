@@ -20,5 +20,18 @@ public class Towel {
     public int hashCode() {
         return 116;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Towel) {
+            Towel towel1 = this;
+            Towel towel2 = (Towel) obj;
+
+
+            if (towel1.type.equals(towel2.type) && towel1.noOfTowel == towel2.noOfTowel && towel1.colorOfThreadUsed.equals(towel2.colorOfThreadUsed)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }

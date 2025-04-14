@@ -21,4 +21,23 @@ public class Sunlight {
     public int hashCode() {
         return 108;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Sunlight) {
+                System.out.println("Sunlight is reference of object");
+                Sunlight s1 = this;
+                Sunlight s2 = (Sunlight) obj;
+
+
+                if (s1.sunlightWavelength.equals(s2.sunlightWavelength) &&
+                        s1.frequency == s2.frequency) {
+                    System.out.println("Both Sunlight objects are the same (based on Wavelength and Frequency)");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

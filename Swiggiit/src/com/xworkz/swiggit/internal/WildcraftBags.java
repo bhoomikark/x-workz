@@ -19,4 +19,12 @@ public class WildcraftBags {
     public int hashCode() {
         return 529;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof WildcraftBags) {
+            WildcraftBags other = (WildcraftBags) obj;
+            return this.price == other.price && this.areTrolleysAvailable == other.areTrolleysAvailable;
+        }
+        return false;
+    }
 }

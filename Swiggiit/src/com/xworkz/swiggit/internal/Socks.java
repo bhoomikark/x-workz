@@ -20,4 +20,22 @@ public class Socks {
     public int hashCode() {
         return 104;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Socks) {
+                System.out.println("Socks is reference of object");
+                Socks socks1 = this;
+                Socks socks2 = (Socks) obj;
+
+                if (socks1.socksColor.equals(socks2.socksColor) &&
+                        socks1.socksMaterialUsed.equals(socks2.socksMaterialUsed)) {
+                    System.out.println("Both socks are same (based on color and material)");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

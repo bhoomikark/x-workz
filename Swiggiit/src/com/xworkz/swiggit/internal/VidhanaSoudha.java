@@ -19,4 +19,13 @@ public class VidhanaSoudha {
     public int hashCode() {
         return 125;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof VidhanaSoudha) {
+            VidhanaSoudha vidhana1 = this;
+            VidhanaSoudha vidhana2 = (VidhanaSoudha) obj;
+            return vidhana1.members == vidhana2.members && vidhana1.location.equals(vidhana2.location);
+        }
+        return false;
+    }
 }

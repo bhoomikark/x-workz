@@ -21,4 +21,19 @@ public class Uber {
     public int hashCode() {
         return 121;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Uber) {
+            Uber uber1 = this;
+            Uber uber2 = (Uber) obj;
+
+
+            if (uber1.noOfPassengers == uber2.noOfPassengers &&
+                    uber1.autoOrCarAvailable.equals(uber2.autoOrCarAvailable) &&
+                    uber1.uberCarNo.equals(uber2.uberCarNo)) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
