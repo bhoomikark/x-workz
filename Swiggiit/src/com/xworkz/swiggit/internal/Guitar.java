@@ -20,4 +20,19 @@ public class Guitar {
         System.out.println("Default HashCode: " + super.hashCode());
         return 999;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Guitar) {
+                Guitar otherGuitar = (Guitar) obj;
+                if (this.guitarType.equals(otherGuitar.guitarType) &&
+                        this.noOfStrings == otherGuitar.noOfStrings &&
+                        this.isElectric == otherGuitar.isElectric) {
+                    System.out.println("Both guitars are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

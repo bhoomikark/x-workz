@@ -22,4 +22,22 @@ public class Mat {
         System.out.println("Default HashCode: " + super.hashCode());
         return 707;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Mat) {
+                System.out.println("Mat is reference of Object");
+                Mat mat1 = this;
+                Mat mat2 = (Mat) obj;
+                if (mat1.matColor.equals(mat2.matColor) &&
+                        mat1.numberOfThreadsUsed == mat2.numberOfThreadsUsed &&
+                        mat1.matShape.equals(mat2.matShape)) {
+                    System.out.println("Both Mat objects are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -22,4 +22,15 @@ public class DreamHouse {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 111;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof DreamHouse) {
+            DreamHouse dream = (DreamHouse) obj;
+            if (this.kitchen.equals(dream.kitchen)) {
+                System.out.println("Both are same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

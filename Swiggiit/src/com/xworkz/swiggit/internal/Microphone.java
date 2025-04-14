@@ -22,4 +22,22 @@ public class Microphone {
         System.out.println("Default HashCode: " + super.hashCode());
         return 888;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Microphone) {
+                System.out.println("Microphone is reference of Object");
+                Microphone mic1 = this;
+                Microphone mic2 = (Microphone) obj;
+                if (mic1.microphoneBrand.equals(mic2.microphoneBrand) &&
+                        mic1.microphoneFrequency == mic2.microphoneFrequency &&
+                        mic1.colorOfMicrophone.equals(mic2.colorOfMicrophone)) {
+                    System.out.println("Both Microphones are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

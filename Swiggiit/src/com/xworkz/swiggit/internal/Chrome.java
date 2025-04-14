@@ -22,4 +22,20 @@ public class Chrome {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 333;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Chrome) {
+                System.out.println("Chrome is reference of object");
+                Chrome chrome1 = this;
+                Chrome chrome2 = (Chrome) obj;
+                if (chrome1.accountName.equals(chrome2.accountName)) {
+                    System.out.println("Both Chrome objects have the same account name");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

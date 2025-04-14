@@ -21,4 +21,14 @@ public class Scientist {
         System.out.println("Default HashCode: " + super.hashCode());
         return 888;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Scientist) {
+            Scientist otherScientist = (Scientist) obj;
+            return this.scientistName.equals(otherScientist.scientistName) &&
+                    this.honorsFrom.equals(otherScientist.honorsFrom) &&
+                    this.scientistAchievement.equals(otherScientist.scientistAchievement);
+        }
+        return false;
+    }
 }

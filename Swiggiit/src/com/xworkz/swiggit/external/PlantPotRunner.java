@@ -7,5 +7,11 @@ public class PlantPotRunner {
         PlantPot pot = new PlantPot("Ceramic", "Succulent", true);
         System.out.println(pot);
         System.out.println("Overridden HashCode: " + pot.hashCode());
+        PlantPot pot1 = new PlantPot("Ceramic", "Succulent", true);
+        PlantPot pot2 = new PlantPot("Plastic", "Cactus", false);
+
+        System.out.println("pot.equals(pot1)? " + pot.equals(pot1));
+        System.out.println("pot.equals(pot2)? " + pot.equals(pot2));
+
     }
 }

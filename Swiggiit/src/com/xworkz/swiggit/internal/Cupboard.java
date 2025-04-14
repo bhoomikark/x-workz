@@ -21,4 +21,20 @@ public class Cupboard {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 555;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Cupboard) {
+                System.out.println("Cupboard is reference of object");
+                Cupboard cupboard1 = this;
+                Cupboard cupboard2 = (Cupboard) obj;
+                if (cupboard1.cupboardColor.equals(cupboard2.cupboardColor)) {
+                    System.out.println("Both cupboards have the same color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

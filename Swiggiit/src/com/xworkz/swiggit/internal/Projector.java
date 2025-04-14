@@ -22,4 +22,14 @@ public class Projector {
         System.out.println("Default HashCode: " + super.hashCode());
         return 818;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Projector) {
+            Projector otherProjector = (Projector) obj;
+            return this.projectorShape.equals(otherProjector.projectorShape) &&
+                    this.isProjectorHaving5Star == otherProjector.isProjectorHaving5Star &&
+                    this.projectorBrand.equals(otherProjector.projectorBrand);
+        }
+        return false;
+    }
 }

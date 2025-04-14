@@ -24,4 +24,19 @@ public class Hospital {
         System.out.println("Default HashCode: " + super.hashCode());
         return 456;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Hospital) {
+                Hospital otherHospital = (Hospital) obj;
+                if (this.hospitalName.equals(otherHospital.hospitalName) &&
+                        this.hospitalWards == otherHospital.hospitalWards &&
+                        this.isItMultispecialityHospitalOrNot == otherHospital.isItMultispecialityHospitalOrNot) {
+                    System.out.println("Both Hospitals are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

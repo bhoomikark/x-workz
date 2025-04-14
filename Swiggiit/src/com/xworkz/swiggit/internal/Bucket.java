@@ -22,4 +22,24 @@ public class Bucket {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 999;
     }
+    public String getBucketColor() {
+        return bucketColor;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Bucket) {
+                System.out.println("Bucket is reference of object");
+                Bucket bucket1 = this;
+                Bucket bucket2 = (Bucket) obj;
+                if (bucket1.bucketColor.equals(bucket2.bucketColor)) {
+                    System.out.println("Both buckets are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

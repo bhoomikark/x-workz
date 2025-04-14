@@ -22,5 +22,15 @@ public class FileExplorer {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 333;
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof FileExplorer) {
+            FileExplorer other = (FileExplorer) obj;
+            if (this.numberOfFolders == other.numberOfFolders) {
+                System.out.println("Both are same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

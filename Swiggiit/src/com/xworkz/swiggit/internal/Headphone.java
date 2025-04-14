@@ -20,4 +20,19 @@ public class Headphone {
         System.out.println("Default HashCode: " + super.hashCode());
         return 321;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Headphone) {
+                Headphone otherHeadphone = (Headphone) obj;
+                if (this.headphoneBrand.equals(otherHeadphone.headphoneBrand) &&
+                        this.isWireless == otherHeadphone.isWireless &&
+                        this.price == otherHeadphone.price) {
+                    System.out.println("Both Headphones are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

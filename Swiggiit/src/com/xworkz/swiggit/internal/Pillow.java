@@ -22,4 +22,22 @@ public class Pillow {
         System.out.println("Default HashCode: " + super.hashCode());
         return 450;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Pillow) {
+                System.out.println("Pillow is reference of Object");
+                Pillow p1 = this;
+                Pillow p2 = (Pillow) obj;
+                if (p1.pillowCover.equals(p2.pillowCover) &&
+                        p1.pillowBrand.equals(p2.pillowBrand) &&
+                        p1.pillowDesign.equals(p2.pillowDesign)) {
+                    System.out.println("Both Pillow objects are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

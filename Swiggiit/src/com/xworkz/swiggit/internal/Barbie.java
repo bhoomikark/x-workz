@@ -23,4 +23,25 @@ public class Barbie {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 111;
     }
+
+    public String getTitle() {
+        return barbieMovieName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Barbie) {
+                System.out.println("Barbie is reference of object");
+                Barbie barbie1 = this;
+                Barbie barbie2 = (Barbie) obj;
+                if (barbie1.barbieMovieName.equals(barbie2.barbieMovieName)) {
+                    System.out.println("Both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

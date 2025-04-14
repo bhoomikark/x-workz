@@ -22,4 +22,20 @@ public class Intelj {
         System.out.println("Default HashCode: " + super.hashCode());
         return 789;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Intelj) {
+                Intelj otherIntelj = (Intelj) obj;
+                if (this.inteljFolders.equals(otherIntelj.inteljFolders) &&
+                        this.numberOfFiles == otherIntelj.numberOfFiles &&
+                        this.numberOfProjectsCreated == otherIntelj.numberOfProjectsCreated) {
+                    System.out.println("Both Intelj objects are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+}
 }

@@ -19,4 +19,14 @@ public class Dictionary {
     public int hashCode() {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 777;}
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Dictionary) {
+                Dictionary other = (Dictionary) obj;
+                return this.language.equals(other.language);
+            }
+        }
+        return false;
+    }
 }

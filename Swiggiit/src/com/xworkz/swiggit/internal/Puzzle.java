@@ -21,4 +21,14 @@ public class Puzzle {
         System.out.println("Default HashCode: " + super.hashCode());
         return 444;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Puzzle) {
+            Puzzle otherPuzzle = (Puzzle) obj;
+            return this.puzzleName.equals(otherPuzzle.puzzleName) &&
+                    this.pieces == otherPuzzle.pieces &&
+                    this.is3D == otherPuzzle.is3D;
+        }
+        return false;
+    }
 }

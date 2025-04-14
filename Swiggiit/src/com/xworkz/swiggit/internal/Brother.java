@@ -21,4 +21,24 @@ public class Brother {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 888;
     }
+    public String getBrotherName() {
+        return brotherName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Brother) {
+                System.out.println("Brother is reference of object");
+                Brother brother1 = this;
+                Brother brother2 = (Brother) obj;
+                if (brother1.brotherName.equals(brother2.brotherName)) {
+                    System.out.println("Both brothers are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

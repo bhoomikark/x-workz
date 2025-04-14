@@ -22,4 +22,24 @@ public class Blanket {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 444;
     }
+    public String getBlanketColor() {
+        return blanketColor;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Blanket) {
+                System.out.println("Blanket is reference of object");
+                Blanket b1 = this;
+                Blanket b2 = (Blanket) obj;
+                if (b1.blanketColor.equals(b2.blanketColor)) {
+                    System.out.println("Both blankets are of the same color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

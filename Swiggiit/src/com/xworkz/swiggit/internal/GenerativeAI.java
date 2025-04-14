@@ -22,4 +22,15 @@ public class GenerativeAI {
         System.out.println("Default HashCode: " + super.hashCode());
         return 444;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof GenerativeAI) {
+            GenerativeAI other = (GenerativeAI) obj;
+            if (this.namesOfGenAI.equals(other.namesOfGenAI)) {
+                System.out.println("Both are the same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

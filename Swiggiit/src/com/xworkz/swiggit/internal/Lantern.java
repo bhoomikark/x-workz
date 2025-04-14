@@ -20,4 +20,22 @@ public class Lantern {
         System.out.println("Default HashCode: " + super.hashCode());
         return 707;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Lantern) {
+                System.out.println("Lantern is reference of object");
+                Lantern lantern1 = this;
+                Lantern lantern2 = (Lantern) obj;
+                if (lantern1.lanternType.equals(lantern2.lanternType) &&
+                        lantern1.lanternMaterial.equals(lantern2.lanternMaterial) &&
+                        lantern1.isElectric == lantern2.isElectric) {
+                    System.out.println("Both lanterns are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

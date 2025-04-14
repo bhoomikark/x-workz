@@ -24,4 +24,20 @@ public class Bedsheet {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 333;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Bedsheet) {
+                System.out.println("Bedsheet is reference of object");
+                Bedsheet b1 = this;
+                Bedsheet b2 = (Bedsheet) obj;
+                if (b1.bedsheetColor.equals(b2.bedsheetColor)) {
+                    System.out.println("Both bedsheets are of the same color");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

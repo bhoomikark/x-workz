@@ -22,4 +22,24 @@ public class Board {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 666;
     }
+    public String getBoardType() {
+        return typeOfBoard;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Board) {
+                System.out.println("Board is reference of object");
+                Board board1 = this;
+                Board board2 = (Board) obj;
+                if (board1.typeOfBoard.equals(board2.typeOfBoard)) {
+                    System.out.println("Both boards are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

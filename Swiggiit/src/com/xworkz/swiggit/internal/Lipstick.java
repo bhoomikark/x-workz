@@ -22,4 +22,22 @@ public class Lipstick {
         System.out.println("Default HashCode: " + super.hashCode());
         return 525;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Lipstick) {
+                System.out.println("Lipstick is reference of object");
+                Lipstick lipstick1 = this;
+                Lipstick lipstick2 = (Lipstick) obj;
+                if (lipstick1.lipstickBrand.equals(lipstick2.lipstickBrand)
+                        && lipstick1.ownerName.equals(lipstick2.ownerName)
+                        && lipstick1.noOfShadesAvailable == lipstick2.noOfShadesAvailable) {
+                    System.out.println("Both lipsticks are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

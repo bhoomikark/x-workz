@@ -20,4 +20,21 @@ public class Camera {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 222;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Calendar) {
+                System.out.println("Calendar is reference of object");
+                Camera  camera = this;
+                Camera camera1 = (Camera) obj;
+                if (
+                        camera1.cameraBrand.equals(camera.cameraBrand)) {
+                    System.out.println("Both calendars are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

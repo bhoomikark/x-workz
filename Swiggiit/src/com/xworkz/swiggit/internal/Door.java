@@ -20,4 +20,12 @@ public class Door {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 55;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Door) {
+            Door other = (Door) obj;
+            return this.doorType.equals(other.doorType);
+        }
+        return false;
+    }
 }

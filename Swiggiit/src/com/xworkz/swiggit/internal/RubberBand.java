@@ -22,4 +22,15 @@ public class RubberBand {
         System.out.println("Default HashCode: " + super.hashCode());
         return 97;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof RubberBand) {
+            RubberBand otherRubberBand = (RubberBand) obj;
+            return this.rubberBandColor.equals(otherRubberBand.rubberBandColor) &&
+                    this.rubberBandType.equals(otherRubberBand.rubberBandType) &&
+                    this.isBowRubberBand == otherRubberBand.isBowRubberBand;
+        }
+        return false;
+    }
 }

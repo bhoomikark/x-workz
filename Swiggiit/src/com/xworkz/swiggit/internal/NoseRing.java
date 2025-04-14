@@ -21,4 +21,22 @@ public class NoseRing {
         System.out.println("Default HashCode: " + super.hashCode());
         return 333;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof NoseRing) {
+                System.out.println("NoseRing is reference of Object");
+                NoseRing n1 = this;
+                NoseRing n2 = (NoseRing) obj;
+                if (n1.noseRingGoldOrNot == n2.noseRingGoldOrNot &&
+                        n1.noseRingDesign.equals(n2.noseRingDesign) &&
+                        n1.noseRingMaterial.equals(n2.noseRingMaterial)) {
+                    System.out.println("Both NoseRing objects are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

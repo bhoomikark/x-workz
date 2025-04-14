@@ -22,4 +22,15 @@ public class Earring {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 222;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Earring) {
+            Earring e = (Earring) obj;
+            if (this.earringColor.equals(e.earringColor)) {
+                System.out.println("Both are same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

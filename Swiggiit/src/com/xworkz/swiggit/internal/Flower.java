@@ -22,4 +22,15 @@ public class Flower {
         System.out.println("Default HashCode: " + super.hashCode());
         return 999;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Flower) {
+            Flower other = (Flower) obj;
+            if (this.flowerName.equals(other.flowerName)) {
+                System.out.println("Both are same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

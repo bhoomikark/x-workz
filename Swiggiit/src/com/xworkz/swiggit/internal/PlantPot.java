@@ -20,4 +20,14 @@ public class PlantPot {
         System.out.println("Default HashCode: " + super.hashCode());
         return 606;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof PlantPot) {
+            PlantPot otherPot = (PlantPot) obj;
+            return this.potMaterial.equals(otherPot.potMaterial) &&
+                    this.plantType.equals(otherPot.plantType) &&
+                    this.isIndoor == otherPot.isIndoor;
+        }
+        return false;
+    }
 }

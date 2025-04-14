@@ -8,5 +8,8 @@ public class CameraRunner {
         System.out.println(camera);
         System.out.println("Camera HashCode: " + camera.hashCode());
         System.out.println("Original HashCode: " + System.identityHashCode(camera));
+        Camera camera1=new Camera("Canon", 24.2, true);
+        boolean value=camera.equals(camera1);
+        System.out.println(value);
     }
 }

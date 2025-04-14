@@ -21,4 +21,14 @@ public class Pipe {
         System.out.println("Default HashCode: " + super.hashCode());
         return 555;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Pipe) {
+            Pipe otherPipe = (Pipe) obj;
+            return this.pipeType.equals(otherPipe.pipeType) &&
+                    this.pipeNo == otherPipe.pipeNo &&
+                    this.pipeBrand.equals(otherPipe.pipeBrand);
+        }
+        return false;
+    }
 }

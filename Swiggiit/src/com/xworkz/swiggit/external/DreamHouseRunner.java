@@ -8,5 +8,9 @@ public class DreamHouseRunner {
         System.out.println("DreamHouse to string: " + dreamHouse.toString());
         System.out.println("DreamHouse HashCode: " + dreamHouse.hashCode());
         System.out.println("Original HashCode: " + System.identityHashCode(dreamHouse));
+        DreamHouse dreamHouse1 = new DreamHouse("Center", "Modular", 4);
+        DreamHouse dreamHouse2 = new DreamHouse("Corner", "Modular", 3);
+        boolean isEqual = dreamHouse1.equals(dreamHouse2);
+        System.out.println("Are both DreamHouses equal? " + isEqual);
     }
 }

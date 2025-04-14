@@ -20,4 +20,21 @@ public class Calendar {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 111;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Calendar) {
+                System.out.println("Calendar is reference of object");
+                Calendar calendar1 = this;
+                Calendar calendar2 = (Calendar) obj;
+                if (calendar1.year == calendar2.year &&
+                        calendar1.calendarType.equals(calendar2.calendarType)) {
+                    System.out.println("Both calendars are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

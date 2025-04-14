@@ -22,4 +22,22 @@ public class Paper {
         System.out.println("Default HashCode: " + super.hashCode());
         return 999;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Paper) {
+                System.out.println("Paper is reference of Object");
+                Paper p1 = this;
+                Paper p2 = (Paper) obj;
+                if (p1.paperName.equals(p2.paperName) &&
+                        p1.paperLanguage.equals(p2.paperLanguage) &&
+                        p1.noOfPaperBought == p2.noOfPaperBought) {
+                    System.out.println("Both Paper objects are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

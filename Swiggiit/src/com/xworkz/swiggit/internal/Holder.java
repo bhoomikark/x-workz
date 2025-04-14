@@ -22,4 +22,19 @@ public class Holder {
         System.out.println("Default HashCode: " + super.hashCode());
         return 987;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Holder) {
+                Holder otherHolder = (Holder) obj;
+                if (this.materialUsed.equals(otherHolder.materialUsed) &&
+                        this.noOfNutsUsed == otherHolder.noOfNutsUsed &&
+                        this.color.equals(otherHolder.color)) {
+                    System.out.println("Both Holders are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

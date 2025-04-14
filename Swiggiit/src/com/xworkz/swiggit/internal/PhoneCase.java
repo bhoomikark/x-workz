@@ -20,4 +20,14 @@ public class PhoneCase {
         System.out.println("Default HashCode: " + super.hashCode());
         return 886;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof PhoneCase) {
+            PhoneCase other = (PhoneCase) obj;
+            return this.caseMaterial.equals(other.caseMaterial) &&
+                    this.caseColor.equals(other.caseColor) &&
+                    this.isFlipCover == other.isFlipCover;
+        }
+        return false;
+    }
 }

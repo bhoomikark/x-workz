@@ -8,5 +8,12 @@ public class BlanketRunner {
         System.out.println("Blanket to string: " + blanket.toString());
         System.out.println("Blanket HashCode: " + blanket.hashCode());
         System.out.println("Original HashCode: " + System.identityHashCode(blanket));
+        Blanket blanket1 = new Blanket("Blue", "Cotton", 1);
+        Blanket blanket2 = new Blanket("Maroon", "Silk", 3);
+
+        System.out.println("Are at same location or not: " + (blanket1 == blanket2));
+        boolean value = blanket2.equals(blanket);
+        System.out.println("Are both blankets same? " + value);
     }
-}
+    }
+

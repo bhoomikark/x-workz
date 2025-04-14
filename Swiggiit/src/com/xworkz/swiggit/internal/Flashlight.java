@@ -20,4 +20,15 @@ public class Flashlight {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 444;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Flashlight) {
+            Flashlight other = (Flashlight) obj;
+            if (this.flashlightType.equals(other.flashlightType)) {
+                System.out.println("Both are same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

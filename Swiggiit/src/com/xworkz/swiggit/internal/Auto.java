@@ -23,5 +23,31 @@ public class Auto {
             System.out.println("Default Hashcode: "+super.hashCode());
             return 99;
         }
+        public String getAutoBrand()
+        {
+            return autoBrand;
+        }
+        public boolean equals(Object obj)
+        {
+            if(obj!=null)
+            {
+                System.out.println("Not null");
+                if(obj instanceof Auto)
+                {
+                    System.out.println("Auto is reference of object");
+                    Auto auto1=this;
+                    Auto auto2=(Auto)obj;
+                    if(auto1.autoBrand.equals(auto2.autoBrand))
+                    {
+                        System.out.println("Both are same");
+                        return true;
+                    }
+
+
+                }
+            }
+            return false;
+        }
+
     }
 

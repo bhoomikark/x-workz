@@ -21,4 +21,19 @@ public class HairOil {
         System.out.println("Default HashCode: " + super.hashCode());
         return 222;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HairOil) {
+                HairOil otherOil = (HairOil) obj;
+                if (this.oilBrand.equals(otherOil.oilBrand) &&
+                        this.cost == otherOil.cost &&
+                        this.ml == otherOil.ml) {
+                    System.out.println("Both hair oils are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

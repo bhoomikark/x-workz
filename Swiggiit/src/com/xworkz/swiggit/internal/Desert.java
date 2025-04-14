@@ -22,4 +22,14 @@ public class Desert {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 888;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Desert) {
+                Desert other = (Desert) obj;
+                return this.desertType.equals(other.desertType);
+            }
+        }
+        return false;
+    }
 }

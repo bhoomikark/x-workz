@@ -21,4 +21,14 @@ public class Sketch {
         System.out.println("Default HashCode: " + super.hashCode());
         return 303;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Sketch) {
+            Sketch otherSketch = (Sketch) obj;
+            return this.sketchPencilsNeeded.equals(otherSketch.sketchPencilsNeeded) &&
+                    this.noOfSketchesDone == otherSketch.noOfSketchesDone &&
+                    this.pencilOrDrawingPencil.equals(otherSketch.pencilOrDrawingPencil);
+        }
+        return false;
+    }
 }

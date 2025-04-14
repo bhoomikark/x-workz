@@ -23,4 +23,19 @@ public class ITWorker {
         System.out.println("Default HashCode: " + super.hashCode());
         return 303;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof ITWorker) {
+                ITWorker otherWorker = (ITWorker) obj;
+                if (this.itWorkerName.equals(otherWorker.itWorkerName) &&
+                        this.itWorkerJob.equals(otherWorker.itWorkerJob) &&
+                        this.itWorkerDomain.equals(otherWorker.itWorkerDomain)) {
+                    System.out.println("Both IT Workers are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

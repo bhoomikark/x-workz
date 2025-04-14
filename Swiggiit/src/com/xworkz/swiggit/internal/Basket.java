@@ -20,4 +20,24 @@ public class Basket {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 222;
     }
+    public String getBasketType() {
+        return basketType;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Basket) {
+                System.out.println("Basket is reference of object");
+                Basket basket1 = this;
+                Basket basket2 = (Basket) obj;
+                if (basket1.basketType.equals(basket2.basketType)) {
+                    System.out.println("Both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

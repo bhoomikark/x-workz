@@ -22,4 +22,14 @@ public class Puppet {
         System.out.println("Default HashCode: " + super.hashCode());
         return 999;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Puppet) {
+            Puppet otherPuppet = (Puppet) obj;
+            return this.numberOfPuppetShows == otherPuppet.numberOfPuppetShows &&
+                    this.puppetActName.equals(otherPuppet.puppetActName) &&
+                    this.puppetShowPlace.equals(otherPuppet.puppetShowPlace);
+        }
+        return false;
+    }
 }

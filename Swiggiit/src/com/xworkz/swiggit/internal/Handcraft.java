@@ -22,4 +22,19 @@ public class Handcraft {
         System.out.println("Default HashCode: " + super.hashCode());
         return 333;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof Handcraft) {
+                Handcraft otherHandcraft = (Handcraft) obj;
+                if (this.noOfHandcraftMade == otherHandcraft.noOfHandcraftMade &&
+                        this.handcraftName.equals(otherHandcraft.handcraftName) &&
+                        this.handcraftMaterialUsed.equals(otherHandcraft.handcraftMaterialUsed)) {
+                    System.out.println("Both handcrafts are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

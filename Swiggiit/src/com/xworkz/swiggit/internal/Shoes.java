@@ -22,4 +22,14 @@ public class Shoes {
         System.out.println("Default HashCode: " + super.hashCode());
         return 77;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Shoes) {
+            Shoes otherShoes = (Shoes) obj;
+            return this.shoeBrand.equals(otherShoes.shoeBrand) &&
+                    this.isFormal == otherShoes.isFormal &&
+                    this.shoeColor.equals(otherShoes.shoeColor);
+        }
+        return false;
+    }
 }

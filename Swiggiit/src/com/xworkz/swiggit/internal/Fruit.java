@@ -22,4 +22,15 @@ public class Fruit {
         System.out.println("Default HashCode: " + super.hashCode());
         return 444;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Fruit) {
+            Fruit other = (Fruit) obj;
+            if (this.fruitName.equals(other.fruitName)) {
+                System.out.println("Both are same");
+                return true;
+            }
+        }
+        return false;
+    }
 }

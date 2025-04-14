@@ -20,4 +20,19 @@ public class JeansPant {
         System.out.println("Default HashCode: " + super.hashCode());
         return 505;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof JeansPant) {
+                JeansPant otherJeansPant = (JeansPant) obj;
+                if (this.jeansPantType.equals(otherJeansPant.jeansPantType) &&
+                        this.jeansPantMadeUpOf.equals(otherJeansPant.jeansPantMadeUpOf) &&
+                        this.jeansPantColor.equals(otherJeansPant.jeansPantColor)) {
+                    System.out.println("Both Jeans Pants are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

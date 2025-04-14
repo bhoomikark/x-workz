@@ -23,4 +23,22 @@ public class Patient {
         System.out.println("Default HashCode: " + super.hashCode());
         return 505;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Object is not null");
+            if (obj instanceof Patient) {
+                System.out.println("Patient is reference of Object");
+                Patient p1 = this;
+                Patient p2 = (Patient) obj;
+                if (p1.patientNo == p2.patientNo &&
+                        p1.patientName.equals(p2.patientName) &&
+                        p1.patientIllness.equals(p2.patientIllness)) {
+                    System.out.println("Both Patient objects are equal");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

@@ -9,5 +9,10 @@ public class MicrophoneRunner {
         System.out.println("Microphone to string: " + microphone.toString());
         System.out.println("Overridden HashCode: " + microphone.hashCode());
         System.out.println("Original HashCode using identityHashCode: " + System.identityHashCode(microphone));
+        Microphone mic1 = new Microphone("Sony", 50.0, "Black");
+        Microphone mic2 = new Microphone("JBL", 60.0, "Silver");
+
+        System.out.println("microphone.equals(mic1)? " + microphone.equals(mic1));
+        System.out.println("microphone.equals(mic2)? " + microphone.equals(mic2));
     }
 }

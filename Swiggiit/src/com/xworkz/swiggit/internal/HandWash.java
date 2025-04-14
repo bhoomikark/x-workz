@@ -22,4 +22,19 @@ public class HandWash {
         System.out.println("Default HashCode: " + super.hashCode());
         return 987;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            if (obj instanceof HandWash) {
+                HandWash otherHandWash = (HandWash) obj;
+                if (this.handWashBrand.equals(otherHandWash.handWashBrand) &&
+                        this.isMadeOfChemical == otherHandWash.isMadeOfChemical &&
+                        this.shapeOfHandWash.equals(otherHandWash.shapeOfHandWash)) {
+                    System.out.println("Both Handwash objects are the same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

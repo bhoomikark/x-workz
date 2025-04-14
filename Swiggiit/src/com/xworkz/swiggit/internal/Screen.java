@@ -23,4 +23,14 @@ public class Screen {
         System.out.println("Default HashCode: " + super.hashCode());
         return 999;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Screen) {
+            Screen otherScreen = (Screen) obj;
+            return this.screenType.equals(otherScreen.screenType) &&
+                    this.screenMaterial.equals(otherScreen.screenMaterial) &&
+                    this.screenShape.equals(otherScreen.screenShape);
+        }
+        return false;
+    }
 }

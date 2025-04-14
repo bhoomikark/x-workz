@@ -22,4 +22,20 @@ public class Gmail {
         System.out.println("Default HashCode: " + super.hashCode());
         return 777;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof Gmail) {
+                System.out.println("Gmail is reference of object");
+                Gmail otherGmail = (Gmail) obj;
+                if (this.gmailAccount.equals(otherGmail.gmailAccount)) {
+                    System.out.println("Both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

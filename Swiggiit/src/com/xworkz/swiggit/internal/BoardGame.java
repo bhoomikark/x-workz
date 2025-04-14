@@ -20,4 +20,21 @@ public class BoardGame {
         System.out.println("Default Hashcode: " + super.hashCode());
         return 555;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("Not null");
+            if (obj instanceof BoardGame) {
+                System.out.println("BoardGame is reference of object");
+                BoardGame game1 = this;
+                BoardGame game2 = (BoardGame) obj;
+                if (game1.gameName.equals(game2.gameName)) {
+                    System.out.println("Both games are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
+

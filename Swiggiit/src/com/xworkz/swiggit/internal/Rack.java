@@ -22,4 +22,14 @@ public class Rack {
         System.out.println("Default HashCode: " + super.hashCode());
         return 555;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null && obj instanceof Rack) {
+            Rack otherRack = (Rack) obj;
+            return this.rackMaterial.equals(otherRack.rackMaterial) &&
+                    this.numberOfRacks == otherRack.numberOfRacks &&
+                    this.colorOfRack.equals(otherRack.colorOfRack);
+        }
+        return false;
+    }
 }
