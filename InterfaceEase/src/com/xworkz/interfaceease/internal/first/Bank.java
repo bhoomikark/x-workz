@@ -15,4 +15,10 @@ public class Bank implements Funds {
     public void interest() {
         System.out.println("Implement from Funds - take Loan - bank Class");
     }
+    @Override
+    public void checkFunds()
+    {
+        System.out.println("Checking funds -- bank");
+    }
+
 }

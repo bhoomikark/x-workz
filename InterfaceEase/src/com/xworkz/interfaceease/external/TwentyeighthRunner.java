@@ -8,5 +8,6 @@ public class TwentyeighthRunner {
         rental.rentCar();
         rental.returnCar();
         rental.extendRentalPeriod();
+        rental.viewPriceToREnt();
     }
 }

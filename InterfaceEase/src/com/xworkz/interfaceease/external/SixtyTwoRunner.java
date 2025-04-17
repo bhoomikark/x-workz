@@ -8,5 +8,6 @@ public class SixtyTwoRunner {
         mp.loadMedia();
         mp.playMedia();
         mp.stopMedia();
+        mp.pauseMediaplay();
     }
 }

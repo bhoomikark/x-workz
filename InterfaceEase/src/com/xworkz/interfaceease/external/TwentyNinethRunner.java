@@ -7,5 +7,6 @@ public class TwentyNinethRunner {
         LibraryManagement library = new PublicLibrary();
         library.returnBook();
         library.searchBook();
+        library.viewSettings();
     }
 }

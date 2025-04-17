@@ -8,5 +8,6 @@ public class sixteenthRunner {
         robo.start();
         robo.performTask();
         robo.shutdown();
+        robo.operateWithRemote();
     }
 }

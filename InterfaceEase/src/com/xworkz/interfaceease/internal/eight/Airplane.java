@@ -16,4 +16,9 @@ public class Airplane implements Flyable {
     public void land() {
         System.out.println("fly -- airplane");
     }
+
+    @Override
+    public void Departure() {
+        System.out.println("Departure -- Airplane");
+    }
 }

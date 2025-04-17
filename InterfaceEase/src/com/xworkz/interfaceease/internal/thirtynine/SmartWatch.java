@@ -15,4 +15,9 @@ public class SmartWatch implements FitnessTracker {
     public void endWorkout() {
         System.out.println("Workout session ended.");
     }
+@Override
+    public void trachHeartRate()
+    {
+        System.out.println("Track heart rate -- smart watch");
+    }
 }

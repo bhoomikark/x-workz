@@ -15,4 +15,9 @@ public class VLCPlayer implements MediaPlayer {
     public void stopMedia() {
         System.out.println("Stopping media in VLC Player.");
     }
+@Override
+    public void pauseMediaplay()
+    {
+        System.out.println("pause media -- VLCP player");
+    }
 }

@@ -13,4 +13,9 @@ public class Novel implements Book {
     public void close() {
         System.out.println("Book closed.");
     }
+@Override
+    public void write()
+    {
+        System.out.println("write notes -- default -- novel");
+    }
 }

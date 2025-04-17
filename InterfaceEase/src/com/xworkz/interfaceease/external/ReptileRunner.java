@@ -15,6 +15,7 @@ public class ReptileRunner {
         Venomous viper2 = new Scorpion();
         viper2.bite();
         viper2.injectVenom();
+        viper2.venom();
         System.out.println("=================================");
 
         System.out.println("Running interface Reptile reference from Viper class");
@@ -32,6 +33,7 @@ public class ReptileRunner {
         lizard.crawl();
         lizard.shedSkin();
         lizard.makeSound();
+        lizard.sleep();
         System.out.println("=================================");
     }
 }

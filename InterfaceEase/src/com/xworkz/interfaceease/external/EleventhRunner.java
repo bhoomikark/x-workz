@@ -8,10 +8,12 @@ public class EleventhRunner {
         Resizable resizable=new Window();
         resizable.resizeHeight();
         resizable.resizeWidth();
+        resizable.resizebreadth();
         Drawable drawable3=new Sketch();
         drawable3.drawShape();
         drawable3.fillColor();
         drawable3.setLineStyle();
+        drawable3.paint();
         resizable.maintainAspectRatio();
         System.out.println("==============================");
         System.out.println("2 copies from 2 sub classes");
@@ -19,6 +21,7 @@ public class EleventhRunner {
         drawable.drawShape();
         drawable.fillColor();
         drawable.setLineStyle();
+
         Resizable resizable1=new Canvas();
         resizable1.resizeHeight();
         resizable1.resizeWidth();

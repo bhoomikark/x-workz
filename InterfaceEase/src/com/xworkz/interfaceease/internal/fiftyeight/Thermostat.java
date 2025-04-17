@@ -4,4 +4,8 @@ public interface Thermostat {
     void increaseTemperature();
     void decreaseTemperature();
     void displayTemperature();
+    default void controlTemperature()
+    {
+        System.out.println("Running Temp");
+    }
 }

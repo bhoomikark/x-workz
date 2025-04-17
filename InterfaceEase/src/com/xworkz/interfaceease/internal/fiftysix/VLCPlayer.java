@@ -15,4 +15,9 @@ public class VLCPlayer implements VideoPlayer {
     public void stopVideo() {
         System.out.println("Video stopped.");
     }
+@Override
+    public void openSettings()
+    {
+        System.out.println("open settings -- vlcplayer");
+    }
 }

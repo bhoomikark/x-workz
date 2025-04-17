@@ -15,4 +15,9 @@ public class PayPal implements PaymentGateway {
     public void cancelPayment() {
         System.out.println("Payment canceled.");
     }
+    @Override
+    public void checkHistory()
+    {
+        System.out.println("check history -- paypal");
+    }
 }

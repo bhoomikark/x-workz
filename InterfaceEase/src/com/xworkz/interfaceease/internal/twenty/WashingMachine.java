@@ -13,4 +13,9 @@ public class WashingMachine implements Device {
     public void powerOff() {
         System.out.println("Washing Machine powered OFF.");
     }
+@Override
+    public void reboot()
+    {
+        System.out.println("perform reboot -- washing machine");
+    }
 }

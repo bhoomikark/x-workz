@@ -15,4 +15,9 @@ public class DSLRCamera implements Camera {
     public void closeCamera() {
         System.out.println("DSLR Camera is now OFF.");
     }
+@Override
+    public void flashlightOn()
+    {
+        System.out.println("flash on -- default -- DSLRCamera");
+    }
 }

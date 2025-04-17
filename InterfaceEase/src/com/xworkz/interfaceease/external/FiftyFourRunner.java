@@ -8,5 +8,6 @@ public class FiftyFourRunner {
         tracker.startTracking();
         tracker.monitorSteps();
         tracker.endTracking();
+        tracker.seetotalsteps();
     }
 }

@@ -16,4 +16,9 @@ public class Sketch implements  Drawable{
     public void setLineStyle() {
         System.out.println("setline style -- drawable -- sketch");
     }
+    @Override
+    public void paint()
+    {
+        System.out.println("Running paint");
+    }
 }

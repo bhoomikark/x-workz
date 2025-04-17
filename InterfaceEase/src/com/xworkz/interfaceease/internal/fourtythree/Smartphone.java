@@ -13,4 +13,9 @@ public class Smartphone implements Mobile {
     public void browse() {
         System.out.println("Browsing internet.");
     }
+@Override
+    public void makeNotes()
+    {
+        System.out.println("make notes -- smartphone -- default");
+    }
 }

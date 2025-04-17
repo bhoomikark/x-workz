@@ -9,10 +9,12 @@ public class CatRunner {
         domesticAnimal.eat();
         domesticAnimal.sleep();
         domesticAnimal.wake();
+        domesticAnimal.pee();
         Mammal mammal2=new Deer();
         mammal2.feedYoung();
         mammal2.giveBirth();
         mammal2.groom();
+        mammal2.care();
         System.out.println("=================================");
         System.out.println("2 copies from 2 new Classes");
         DomesticAnimal domesticAnimal1=new Cat();

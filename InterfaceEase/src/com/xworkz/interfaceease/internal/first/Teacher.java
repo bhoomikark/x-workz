@@ -16,4 +16,9 @@ public class Teacher implements School {
     public void Work() {
         System.out.println("Running Work from School in Teacher");
     }
+    @Override
+    public void homeWork()
+    {
+        System.out.println("Home work -- teacher check");
+    }
 }

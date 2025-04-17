@@ -7,5 +7,7 @@ public class FourteenRunner {
         RemoteControl remote = new TVRemote();
         remote.changeChannel();
         remote.turnOff();
+        remote.turnOn();
+        remote.mute();
     }
 }

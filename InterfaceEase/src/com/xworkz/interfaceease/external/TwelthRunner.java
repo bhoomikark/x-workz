@@ -9,10 +9,12 @@ public class TwelthRunner {
         uploadable.startUpload();
         uploadable.pauseUpload();
         uploadable.completeUpload();
+        uploadable.upload();
         Downloadable downloadable2=new PDFDownload();
         downloadable2.startDownload();
         downloadable2.pauseDownload();
         downloadable2.completeDownload();
+        downloadable2.clickDownload();
         System.out.println("========================================");
         System.out.println("2 copies from 2 subclasses");
         Uploadable uploadable1=new Downloader();

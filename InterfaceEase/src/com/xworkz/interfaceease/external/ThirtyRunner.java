@@ -8,5 +8,6 @@ public class ThirtyRunner {
         auth.login();
         auth.logout();
         auth.resetPassword();
+        auth.writeEmail();
     }
 }

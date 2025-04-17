@@ -13,5 +13,10 @@ public class Chef implements Cook {
     public void serve() {
         System.out.println("Dish served.");
     }
+@Override
+    public  void bringIngredients()
+    {
+        System.out.println("Bring Ingredients --default -- Chef");
+    }
 }
 

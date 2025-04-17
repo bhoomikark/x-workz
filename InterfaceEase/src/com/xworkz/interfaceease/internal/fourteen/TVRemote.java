@@ -13,4 +13,9 @@ public class TVRemote implements RemoteControl {
     public void turnOff() {
         System.out.println("TV is turned OFF.");
     }
+@Override
+    public void mute()
+    {
+        System.out.println("default mute -- tv remote");
+    }
 }

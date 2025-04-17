@@ -8,5 +8,5 @@ public class FourtyNineRunner {
         device.initialize();
         device.scan();
         device.shutdown();
-    }
-}
+        device.operatebutton();
+    }}

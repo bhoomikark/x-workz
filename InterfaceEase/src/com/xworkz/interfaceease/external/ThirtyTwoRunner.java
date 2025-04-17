@@ -8,5 +8,6 @@ public class ThirtyTwoRunner {
         foodDelivery.orderFood();
         foodDelivery.trackDelivery();
         foodDelivery.rateService();
+        foodDelivery.onNotification();
     }
 }

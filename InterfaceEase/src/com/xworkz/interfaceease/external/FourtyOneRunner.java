@@ -8,5 +8,6 @@ public class FourtyOneRunner {
         cam.openCamera();
         cam.clickPicture();
         cam.closeCamera();
+        cam.flashlightOn();
     }
 }

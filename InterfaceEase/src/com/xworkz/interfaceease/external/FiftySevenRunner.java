@@ -8,5 +8,6 @@ public class FiftySevenRunner {
         reader.openBook();
         reader.readPage();
         reader.closeBook();
+        reader.countPage();
     }
 }

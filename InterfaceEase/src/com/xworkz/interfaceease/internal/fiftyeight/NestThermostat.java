@@ -15,5 +15,10 @@ public class NestThermostat implements Thermostat {
     public void displayTemperature() {
         System.out.println("Current temperature: 22°C");
     }
+    @Override
+    public  void controlTemperature()
+    {
+        System.out.println("Running Temp");
+    }
 }
 

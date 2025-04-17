@@ -8,5 +8,6 @@ public class FiftyoneRunner {
         light.connect();
         light.turnOnLight();
         light.turnOffLight();
+        light.automatic();
     }
 }

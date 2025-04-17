@@ -15,4 +15,10 @@ public class Leopard implements NocturnalAnimal{
     public void sleepDuringDay() {
         System.out.println("Owl is sleeping during the day.Leopard");
     }
+    @Override
+    public void attack()
+    {
+        System.out.println("attack -- leopard");
+    }
+
 }

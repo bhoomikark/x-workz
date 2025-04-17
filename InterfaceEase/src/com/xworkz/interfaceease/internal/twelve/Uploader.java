@@ -15,4 +15,9 @@ public class Uploader implements Uploadable{
     public void completeUpload() {
         System.out.println("complete upload -- uploadable -- Uploader");
     }
+@Override
+    public void upload()
+    {
+        System.out.println("upload -- Uploader");
+    }
 }

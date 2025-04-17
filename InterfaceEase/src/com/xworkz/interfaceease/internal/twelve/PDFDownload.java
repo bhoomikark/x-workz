@@ -15,4 +15,9 @@ public class PDFDownload implements Downloadable{
     public void completeDownload() {
         System.out.println("complete Download -- downloadable -- PDF Download");
     }
+@Override
+public void clickDownload()
+    {
+        System.out.println("click download -- pdf download");
+    }
 }

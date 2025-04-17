@@ -13,4 +13,9 @@ public class DigitalClock implements Alarm {
     public void stopAlarm() {
         System.out.println("Alarm stopped.");
     }
+@Override
+    public void snooze()
+    {
+        System.out.println("snooze -- default -- digital clock");
+    }
 }

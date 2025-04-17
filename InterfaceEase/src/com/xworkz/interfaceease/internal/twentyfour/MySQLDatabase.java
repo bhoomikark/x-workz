@@ -15,4 +15,9 @@ public class MySQLDatabase implements Database {
     public void closeConnection() {
         System.out.println("Closing MySQL database connection.");
     }
+@Override
+    public void query()
+    {
+        System.out.println("get to know queries -- my sql database");
+    }
 }

@@ -8,6 +8,7 @@ public class ThirtyFourRunner {
         event.planEvent();
         event.executeEvent();
         event.evaluateEvent();
+        event.planParty();
     }
 }
 

@@ -8,5 +8,6 @@ public class FourtyFourRunner {
         a.setAlarm();
         a.ring();
         a.stopAlarm();
+        a.snooze();
     }
 }

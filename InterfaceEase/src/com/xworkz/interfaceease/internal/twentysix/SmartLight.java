@@ -15,4 +15,9 @@ public class SmartLight implements DeviceControl {
     public void adjustSettings() {
         System.out.println("Adjusting brightness of the smart light.");
     }
+@Override
+    public void getNotification()
+    {
+        System.out.println("notification turn On -- smart light");
+    }
 }

@@ -8,5 +8,6 @@ public class TwentySixRunner {
         dc.turnOn();
         dc.turnOff();
         dc.adjustSettings();
+        dc.getNotification();
     }
 }

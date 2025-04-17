@@ -15,4 +15,9 @@ public class Bicycle implements Vehicle {
     public void honk() {
         System.out.println("Bicycle bell rings.");
     }
+@Override
+    public void applyBrake()
+    {
+        System.out.println("apply brake -- Bicycle");
+    }
 }

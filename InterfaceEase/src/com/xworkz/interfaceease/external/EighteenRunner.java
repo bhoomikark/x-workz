@@ -8,5 +8,6 @@ public class EighteenRunner {
         myGame.startGame();
         myGame.playGame();
         myGame.endGame();
+        myGame.pauseGame();
     }
 }

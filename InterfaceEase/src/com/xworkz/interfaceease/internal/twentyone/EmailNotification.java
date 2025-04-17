@@ -13,4 +13,9 @@ public class EmailNotification implements Notification {
     public void send() {
         System.out.println("Email sent successfully.");
     }
+@Override
+    public void turnOff()
+    {
+        System.out.println("turn off notification -- email notification");
+    }
 }

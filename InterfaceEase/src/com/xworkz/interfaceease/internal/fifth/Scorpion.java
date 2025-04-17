@@ -10,4 +10,9 @@ public class Scorpion implements Venomous {
     public void injectVenom() {
         System.out.println("Viper injects venom.");
     }
+@Override
+ public void venom()
+    {
+        System.out.println("Running venom -- scorpion");
+    }
 }

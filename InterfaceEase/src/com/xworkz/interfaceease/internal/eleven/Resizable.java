@@ -4,4 +4,8 @@ public interface Resizable {
     void resizeWidth();
     void resizeHeight();
     void maintainAspectRatio();
+    default void resizebreadth()
+    {
+        System.out.println("Running resize");
+    }
 }

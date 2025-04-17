@@ -15,4 +15,9 @@ public class ChessGame implements Game {
     public void endGame() {
         System.out.println("Chess game ended.");
     }
+@Override
+    public void pauseGame()
+    {
+        System.out.println("pause game -- default -- chessgame");
+    }
 }

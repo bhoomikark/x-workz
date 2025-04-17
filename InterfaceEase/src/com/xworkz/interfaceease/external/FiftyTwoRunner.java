@@ -8,5 +8,6 @@ public class FiftyTwoRunner {
         app.openApp();
         app.searchRecipe();
         app.closeApp();
+        app.seeIngridients();
     }
 }

@@ -8,5 +8,6 @@ public class TwentyOneRunner {
         n.notifyUser();
         n.prepareMessage();
         n.send();
+        n.turnOff();
     }
 }

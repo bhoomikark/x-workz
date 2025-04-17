@@ -8,5 +8,6 @@ public class TwentyTwoRunner {
         t.createTask();
         t.markComplete();
         t.assignTask();
+        t.completeTask();
     }
 }

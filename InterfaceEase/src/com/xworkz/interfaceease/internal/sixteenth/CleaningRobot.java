@@ -13,4 +13,9 @@ public class CleaningRobot implements Robot {
     public void shutdown() {
         System.out.println("Cleaning Robot shutting down.");
     }
+@Override
+    public void operateWithRemote()
+    {
+        System.out.println("operate with remote -- Cleaning Robot");
+    }
 }

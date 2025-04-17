@@ -8,5 +8,6 @@ public class SixtyRunner {
         pg.initiatePayment();
         pg.confirmPayment();
         pg.cancelPayment();
+        pg.checkHistory();
     }
 }

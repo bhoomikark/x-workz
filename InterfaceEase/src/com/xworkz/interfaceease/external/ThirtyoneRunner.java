@@ -8,5 +8,6 @@ public class ThirtyoneRunner {
         content.createContent();
         content.publishContent();
         content.deleteContent();
+        content.makeReels();
     }
 }

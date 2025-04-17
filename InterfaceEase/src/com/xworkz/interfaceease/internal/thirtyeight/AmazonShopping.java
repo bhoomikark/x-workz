@@ -15,4 +15,9 @@ public class AmazonShopping implements OnlineShopping {
     public void trackOrder() {
         System.out.println("Tracking order on Amazon.");
     }
+@Override
+    public void viewHistory()
+    {
+        System.out.println("view History -- Amazon shopping");
+    }
 }

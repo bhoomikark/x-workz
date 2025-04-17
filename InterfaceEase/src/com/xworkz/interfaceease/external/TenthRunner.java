@@ -13,10 +13,12 @@ public class TenthRunner {
         refundable.initiateRefund();
         refundable.processRefund();
         refundable.verifyRefundEligibility();
+        refundable.takeRefund();
         Payable payable2=new ReturnAmount();
         payable2.applyDiscount();
         payable2.generateInvoice();
         payable2.applyDiscount();
+        payable2.initiateTransaction();
         System.out.println("=================================================");
         System.out.println("2 Copies from 2 subclasses");
         Refundable refundable1=new Transaction();

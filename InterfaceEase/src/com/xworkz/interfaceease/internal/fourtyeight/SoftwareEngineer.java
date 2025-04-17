@@ -15,4 +15,9 @@ public class SoftwareEngineer implements Developer {
     public void deploy() {
         System.out.println("Code deployed.");
     }
+@Override
+    public  void develop()
+    {
+        System.out.println("develop-- default -- software engineer");
+    }
 }

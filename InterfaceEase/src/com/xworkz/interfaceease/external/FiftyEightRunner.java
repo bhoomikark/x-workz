@@ -8,5 +8,6 @@ public class FiftyEightRunner {
         t.increaseTemperature();
         t.decreaseTemperature();
         t.displayTemperature();
+        t.controlTemperature();
     }
 }

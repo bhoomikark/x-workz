@@ -10,10 +10,12 @@ public class NinthRunner {
         readable.openDocument();
         readable.readContent();
         readable.closeDocument();
+        readable.readStory();
         Writable writable2 = new Notes();
         writable2.createDocument();
         writable2.writeContent();
         writable2.saveDocument();
+        writable2.writeStory();
         System.out.println("=================================================");
         System.out.println("2 Copies from 2 subclasses");
         Readable readable1 = new Editor();

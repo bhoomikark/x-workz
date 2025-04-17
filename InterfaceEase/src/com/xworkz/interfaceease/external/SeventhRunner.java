@@ -9,10 +9,12 @@ public class SeventhRunner {
         scannable.scanBarcode();
         scannable.scanDocument();
         scannable.scanQRCode();
+        scannable.scanTextbook();
         Printable printable2=new Printer();
         printable2.printImage();
         printable2.printReport();
         printable2.printText();
+        printable2.colorPrint();
         System.out.println("=================================");
         System.out.println("2 copies from 2 new Classes");
         Scannable scannable1=new DocumentPrinter();

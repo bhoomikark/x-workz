@@ -15,4 +15,9 @@ public class BookReader implements Readable{
     public void closeDocument() {
         System.out.println("close document -- readable -- BookReader");
     }
+    @Override
+    public void readStory()
+    {
+        System.out.println("reda stopry -- BookReader");
+    }
 }

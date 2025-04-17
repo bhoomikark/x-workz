@@ -14,6 +14,7 @@ public class AnimalRunner {
         lion.hunt();
         lion.roam();
         lion.makeSound();
+
         System.out.println();
 
         AquaticAnimal shark = new Shark();

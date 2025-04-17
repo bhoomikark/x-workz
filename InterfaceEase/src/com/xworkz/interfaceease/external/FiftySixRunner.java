@@ -8,5 +8,6 @@ public class FiftySixRunner {
         player.loadVideo();
         player.playVideo();
         player.stopVideo();
+        player.openSettings();
     }
 }

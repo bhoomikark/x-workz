@@ -13,4 +13,9 @@ public class Spotify implements MusicPlayer {
     public void stop() {
         System.out.println("Music stopped.");
     }
+    @Override
+    public  void goToSettings()
+    {
+        System.out.println("running go to -- spotify");
+    }
 }

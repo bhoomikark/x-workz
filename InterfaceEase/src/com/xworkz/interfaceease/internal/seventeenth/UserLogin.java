@@ -13,4 +13,8 @@ public class UserLogin implements LoginSystem {
     public void logout() {
         System.out.println("User logged out.");
     }
+    @Override
+    public void enterDetails() {
+        System.out.println("Enter details -- UserLogin");
+    }
 }

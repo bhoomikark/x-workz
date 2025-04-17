@@ -15,5 +15,10 @@ public class BarcodeScanner implements ScannerDevice {
     public void shutdown() {
         System.out.println("Scanner shutting down.");
     }
+@Override
+    public void operatebutton()
+    {
+        System.out.println("operating buttons -- default -- barcode scanner");
+    }
 }
 

@@ -15,4 +15,9 @@ public class CookBook implements RecipeApp {
     public void closeApp() {
         System.out.println("CookBook app closed.");
     }
+@Override
+    public void seeIngridients()
+    {
+        System.out.println("Check the ingredients -- cookbook");
+    }
 }

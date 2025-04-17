@@ -15,4 +15,9 @@ public class UserAuthentication implements Authentication {
     public void resetPassword() {
         System.out.println("User's password reset successfully.");
     }
+@Override
+    public void writeEmail()
+    {
+        System.out.println("Write email -- default");
+    }
 }

@@ -15,4 +15,9 @@ public class LaserPrinter implements Printer {
     public void finishPrint() {
         System.out.println("Laser Printer finished printing.");
     }
+@Override
+    public void print()
+    {
+        System.out.println("print -- laser printer");
+    }
 }

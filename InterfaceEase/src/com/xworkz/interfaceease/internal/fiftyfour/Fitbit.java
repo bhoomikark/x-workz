@@ -15,4 +15,9 @@ public class Fitbit implements FitnessTracker {
     public void endTracking() {
         System.out.println("Tracking stopped.");
     }
+@Override
+    public void seetotalsteps()
+    {
+        System.out.println("Viewing total steps");
+    }
 }

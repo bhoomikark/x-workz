@@ -4,4 +4,8 @@ public interface Game {
     void startGame();
     void playGame();
     void endGame();
+    default void pauseGame()
+    {
+        System.out.println("Running Pause game");
+    }
 }

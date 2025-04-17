@@ -8,5 +8,6 @@ public class TwentyFourRunner {
         db.connect();
         db.readData();
         db.closeConnection();
+        db.query();
     }
 }

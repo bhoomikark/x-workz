@@ -15,4 +15,9 @@ public class AppleWatch implements SmartWatch {
     public void receiveNotification() {
         System.out.println("You have a new message.");
     }
+@Override
+    public void seeTime()
+    {
+        System.out.println("view time");
+    }
 }

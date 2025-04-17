@@ -7,5 +7,6 @@ public class fifteenthRunner {
         MusicPlayer player = new Spotify();
         player.pause();
         player.stop();
+        player.goToSettings();
     }
 }

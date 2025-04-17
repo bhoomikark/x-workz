@@ -8,6 +8,7 @@ public class fourtyRunner {
         chess.startGame();
         chess.playGame();
         chess.endGame();
+        chess.pauseGame();
     }
 }
 

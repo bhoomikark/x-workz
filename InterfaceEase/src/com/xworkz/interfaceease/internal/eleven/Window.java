@@ -15,4 +15,9 @@ public class Window implements Resizable{
     public void maintainAspectRatio() {
         System.out.println("maintain aspect ratio -- resizable -- Window");
     }
+    @Override
+    public void resizebreadth()
+    {
+        System.out.println("Running resize -- resizebreadth");
+    }
 }

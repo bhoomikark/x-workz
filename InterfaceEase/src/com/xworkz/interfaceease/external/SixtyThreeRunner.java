@@ -8,5 +8,6 @@ public class SixtyThreeRunner {
         browser.openTab();
         browser.browseWebsite();
         browser.closeTab();
+        browser.browseYouTube();
     }
 }

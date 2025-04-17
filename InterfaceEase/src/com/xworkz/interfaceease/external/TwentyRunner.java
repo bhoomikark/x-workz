@@ -8,5 +8,6 @@ public class TwentyRunner {
         d.powerOn();
         d.performFunction();
         d.powerOff();
+        d.reboot();
     }
 }

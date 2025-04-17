@@ -15,4 +15,9 @@ public class ECommerceOrder implements OrderProcessing {
     public void shipOrder() {
         System.out.println("Shipping the order.");
     }
+@Override
+    public void cancelOrder()
+    {
+        System.out.println("cancel order -- Ecommerce order ");
+    }
 }

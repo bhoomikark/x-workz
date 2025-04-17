@@ -8,5 +8,6 @@ public class TwentySeventhRunner {
         order.placeOrder();
         order.processOrder();
         order.shipOrder();
+        order.cancelOrder();
     }
 }

@@ -8,5 +8,6 @@ public class FourtyThreeRunner {
         m.call();
         m.message();
         m.browse();
+        m.makeNotes();
     }
 }

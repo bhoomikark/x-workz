@@ -15,4 +15,9 @@ public class CodingTest implements OnlineExam {
     public void endExam() {
         System.out.println("Coding exam ended.");
     }
+    @Override
+    public void think()
+    {
+        System.out.println("Think and write -- default");
+    }
 }

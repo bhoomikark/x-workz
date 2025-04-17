@@ -15,4 +15,9 @@ public class BlogContentManagement implements ContentManagement {
     public void deleteContent() {
         System.out.println("Deleting blog content.");
     }
+@Override
+    public void makeReels()
+    {
+        System.out.println("make reels -- Blog content");
+    }
 }

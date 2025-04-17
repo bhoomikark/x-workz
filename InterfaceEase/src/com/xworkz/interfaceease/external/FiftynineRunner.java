@@ -8,5 +8,6 @@ public class FiftynineRunner {
         watch.showTime();
         watch.monitorHeartRate();
         watch.receiveNotification();
+        watch.seeTime();
     }
 }

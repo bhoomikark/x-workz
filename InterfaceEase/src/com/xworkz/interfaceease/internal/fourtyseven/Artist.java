@@ -13,4 +13,9 @@ public class Artist implements Painter {
     public void display() {
         System.out.println("Displaying artwork.");
     }
+@Override
+    public void framePainting()
+    {
+        System.out.println("frame -- artist");
+    }
 }

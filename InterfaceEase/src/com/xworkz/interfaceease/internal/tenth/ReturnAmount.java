@@ -15,4 +15,8 @@ public class ReturnAmount implements Payable{
     public void applyDiscount() {
         System.out.println("apply discount -- payable-- return amount");
     }
+@Override
+    public void initiateTransaction() {
+        System.out.println("Initiating transaction... -- return amount");
+    }
 }

@@ -15,4 +15,9 @@ public class Eagle implements FlyingAnimal {
     public void makeSound() {
         System.out.println("Eagle screeches.");
     }
+    @Override
+    public void sleepingHours()
+    {
+        System.out.println("sleeping hours -- default -- eagle");
+    }
 }

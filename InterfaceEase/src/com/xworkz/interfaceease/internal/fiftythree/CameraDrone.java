@@ -15,4 +15,9 @@ public class CameraDrone implements Drone {
     public void land() {
         System.out.println("Drone landing...");
     }
+@Override
+    public void measureHeight()
+    {
+        System.out.println("measure height -- cameradron");
+    }
 }

@@ -15,4 +15,9 @@ public class ChromeBrowser implements WebBrowser {
     public void closeTab() {
         System.out.println("Tab closed in Chrome.");
     }
+@Override
+    public void browseYouTube()
+    {
+        System.out.println("browse you tube -- ChromeBrowser");
+    }
 }

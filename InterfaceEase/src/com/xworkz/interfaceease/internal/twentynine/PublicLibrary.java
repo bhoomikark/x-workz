@@ -15,4 +15,9 @@ public class PublicLibrary implements LibraryManagement {
     public void searchBook() {
         System.out.println("Searching for a book in the public library.");
     }
+@Override
+    public void viewSettings()
+    {
+        System.out.println("view settings -- public library");
+    }
 }

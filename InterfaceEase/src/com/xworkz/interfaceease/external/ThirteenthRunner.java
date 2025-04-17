@@ -8,5 +8,6 @@ public class ThirteenthRunner {
         myShape.draw();
         System.out.println("Area: " + myShape.calculateArea());
         System.out.println("Perimeter: " + myShape.calculatePerimeter());
+        myShape.shapeOutlineColor();
     }
 }

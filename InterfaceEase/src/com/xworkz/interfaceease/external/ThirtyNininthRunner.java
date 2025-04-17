@@ -8,6 +8,7 @@ public class ThirtyNininthRunner {
         tracker.startWorkout();
         tracker.logCalories();
         tracker.endWorkout();
+        tracker.trachHeartRate();
     }
 }
 

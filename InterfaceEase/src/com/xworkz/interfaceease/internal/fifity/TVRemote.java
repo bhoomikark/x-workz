@@ -15,4 +15,9 @@ public class TVRemote implements RemoteControl {
     public void turnOff() {
         System.out.println("TV turned off.");
     }
+@Override
+    public void pressButton()
+    {
+        System.out.println("Running press button -- pressbutton");
+    }
 }

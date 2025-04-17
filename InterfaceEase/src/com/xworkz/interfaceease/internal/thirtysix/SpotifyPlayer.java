@@ -15,4 +15,9 @@ public class SpotifyPlayer implements MusicPlayer {
     public void stop() {
         System.out.println("Music stopped on Spotify.");
     }
+@Override
+    public void playQueue()
+    {
+        System.out.println("play queue -- spotify player");
+    }
 }

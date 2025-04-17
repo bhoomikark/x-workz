@@ -15,4 +15,8 @@ public class ReturnRequest implements Refundable{
     public void processRefund() {
         System.out.println("process refund-- refundable-- return request");
     }
+@Override
+    public void takeRefund() {
+        System.out.println("take refund process... -- return request");
+    }
 }

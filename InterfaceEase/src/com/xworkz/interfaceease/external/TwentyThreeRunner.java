@@ -8,5 +8,6 @@ public class TwentyThreeRunner {
         pg.initiatePayment();
         pg.processPayment();
         pg.completePayment();
+        pg.pay();
     }
 }

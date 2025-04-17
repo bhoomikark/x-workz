@@ -17,4 +17,9 @@ public class BarcodeScanner implements  Scannable{
     public void scanBarcode() {
         System.out.println("Running scan barcode -- Scanable -- class barcodeScanner");
     }
+    @Override
+    public void scanTextbook()
+    {
+        System.out.println("Scan textbook -- barcode scanner");
+    }
 }

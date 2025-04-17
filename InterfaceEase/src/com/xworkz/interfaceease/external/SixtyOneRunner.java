@@ -8,5 +8,6 @@ public class SixtyOneRunner {
         exam.startExam();
         exam.submitAnswer();
         exam.endExam();
+        exam.think();
     }
 }

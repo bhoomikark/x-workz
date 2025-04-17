@@ -15,4 +15,10 @@ public class WeddingEvent implements EventManagement {
     public void evaluateEvent() {
         System.out.println("Evaluating the wedding event's success.");
     }
+@Override
+    public void planParty()
+    {
+        System.out.println("Plan party -- Wedding event");
+    }
+
 }

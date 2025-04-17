@@ -8,5 +8,6 @@ public class SeventeenthRunner {
         system.login();
         system.validate();
         system.logout();
+        system.enterDetails();
     }
 }

@@ -8,5 +8,6 @@ public class FiftyFiveRunner {
         p.initiatePayment();
         p.verifyPayment();
         p.completeTransaction();
+        p.withdraw();
     }
 }

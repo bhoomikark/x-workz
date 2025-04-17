@@ -15,4 +15,9 @@ public class Deer implements Mammal{
     public void feedYoung() {
         System.out.println("feed Young method from Mammal -- deer Class");
     }
+@Override
+    public void care()
+    {
+        System.out.println("care -- default -- Deer");
+    }
 }

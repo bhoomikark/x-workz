@@ -15,5 +15,10 @@ public class PayPal  implements PaymentGateway {
     public void completePayment() {
         System.out.println("Payment completed using PayPal.");
     }
+@Override
+    public void pay()
+    {
+        System.out.println("pay -- Paypal");
+    }
 }
 

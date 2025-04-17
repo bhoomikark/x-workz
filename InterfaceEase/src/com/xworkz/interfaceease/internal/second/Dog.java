@@ -15,4 +15,9 @@ public class Dog implements DomesticAnimal{
     public void wake() {
         System.out.println("Running wake");
     }
+@Override
+    public void pee()
+    {
+        System.out.println("pee -- default--Dog");
+    }
 }

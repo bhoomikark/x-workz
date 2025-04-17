@@ -15,4 +15,9 @@ public class PhilipsHue implements SmartLight {
     public void turnOffLight() {
         System.out.println("Light turned OFF.");
     }
+@Override
+    public void automatic()
+    {
+        System.out.println("Running automatic");
+    }
 }

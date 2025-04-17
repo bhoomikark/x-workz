@@ -15,4 +15,9 @@ public class Lizard implements Reptile {
     public void makeSound() {
         System.out.println("Lizard makes a chirping sound.");
     }
+
+    @Override
+    public void sleep() {
+        System.out.println("Running Reptile -- lizard");
+    }
 }

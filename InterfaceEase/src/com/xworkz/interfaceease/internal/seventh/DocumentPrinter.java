@@ -36,4 +36,9 @@ public class DocumentPrinter implements Printable,Scannable {
         System.out.println("Printing report...-- document printer");
 
     }
+    @Override
+    public void colorPrint()
+    {
+        System.out.println("color print -- document printer");
+    }
 }

@@ -8,5 +8,6 @@ public class ThirtysixthRuuner {
         player.play();
         player.pause();
         player.stop();
+        player.playQueue();
     }
 }

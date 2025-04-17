@@ -15,5 +15,10 @@ public class LuxuryCarRental implements CarRentalService {
     public void extendRentalPeriod() {
         System.out.println("Extending the rental period for the luxury car.");
     }
+@Override
+    public void viewPriceToREnt()
+    {
+        System.out.println("view price rent -- luxury car rental");
+    }
 }
 

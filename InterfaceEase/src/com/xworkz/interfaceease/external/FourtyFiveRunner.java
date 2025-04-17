@@ -8,5 +8,6 @@ public class FourtyFiveRunner {
         b.open();
         b.read();
         b.close();
+        b.write();
     }
 }

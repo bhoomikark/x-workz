@@ -5,14 +5,17 @@ import com.xworkz.interfaceease.internal.eight.*;
 public class EightRunner {
     public static void main(String[] args) {
         System.out.println("Running interface Drivable from Car");
+        System.out.println("=======================================");
         Drivable drivable=new Car();
         drivable.accelerate();
         drivable.brake();
         drivable.startEngine();
+        drivable.start();
         Flyable flyable2=new Airplane();
         flyable2.fly();
         flyable2.land();
         flyable2.takeOff();
+        flyable2.Departure();
         System.out.println("====================================");
         System.out.println("2 copies from 2 subclasses");
         Drivable drivable1=new FlyingCar();

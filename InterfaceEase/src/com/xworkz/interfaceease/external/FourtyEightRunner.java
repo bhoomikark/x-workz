@@ -8,5 +8,6 @@ public class FourtyEightRunner {
         d.code();
         d.test();
         d.deploy();
+        d.develop();
     }
 }

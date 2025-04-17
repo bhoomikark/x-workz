@@ -15,5 +15,10 @@ public class Notes implements  Writable{
     public void saveDocument() {
         System.out.println("save document --(Writable) Notes");
     }
+@Override
+    public void writeStory()
+    {
+        System.out.println("Write story -- default -- Notes");
+    }
 
 }

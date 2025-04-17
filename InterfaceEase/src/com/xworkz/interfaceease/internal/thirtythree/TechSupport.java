@@ -15,5 +15,10 @@ public class TechSupport implements CustomerSupport {
     public void escalateIssue() {
         System.out.println("Escalating the issue to a higher support tier.");
     }
+@Override
+    public void callCustomerCare()
+    {
+        System.out.println("call customer care -- tech support");
+    }
 }
 

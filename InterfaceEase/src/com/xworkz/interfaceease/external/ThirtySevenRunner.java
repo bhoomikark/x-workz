@@ -8,5 +8,6 @@ public class ThirtySevenRunner {
         printer.startPrint();
         printer.cancelPrint();
         printer.finishPrint();
+        printer.print();
     }
 }

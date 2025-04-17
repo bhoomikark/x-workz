@@ -15,4 +15,9 @@ public class Kindle implements EBookReader {
     public void closeBook() {
         System.out.println("Book closed.");
     }
+@Override
+    public void countPage()
+    {
+        System.out.println("Running count page -- kindle");
+    }
 }

@@ -14,4 +14,9 @@ public class SBI implements Bank {
     public void closeAccount() {
         System.out.println("SBI account closed.");
     }
+@Override
+    public void withdrawMoney()
+    {
+        System.out.println("withdraw -- default -- SBI");
+    }
 }

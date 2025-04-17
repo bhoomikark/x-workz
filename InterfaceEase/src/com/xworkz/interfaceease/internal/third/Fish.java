@@ -15,5 +15,10 @@ public class Fish implements AquaticAnimal{
     public void breatheUnderwater() {
         System.out.println("Fish holds its breath while diving.");
     }
+@Override
+    public void makesound()
+    {
+        System.out.println("make sound -- Fish");
+    }
 
 }

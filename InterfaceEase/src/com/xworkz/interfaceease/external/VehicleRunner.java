@@ -9,9 +9,12 @@ public class VehicleRunner {
         car.start();
         car.stop();
         car.honk();
+        car.applyBrake();
         ElectricVehicle electricCar = (ElectricVehicle) car;
         electricCar.charge();
         electricCar.batteryStatus();
+        electricCar.checkmilage();
+        electricCar.batteryOn();
         System.out.println("=================================");
 
         System.out.println(" Running interface Vehicle reference from Bike class");
@@ -32,5 +35,6 @@ public class VehicleRunner {
         ElectricVehicle electricCar2 = new ElectricScooter();
         electricCar2.charge();
         electricCar2.batteryStatus();
+        electricCar2.batteryOn();
     }
 }

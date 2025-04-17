@@ -9,10 +9,12 @@ public class StudentRunner {
          school.Open();
          school.Close();
          school.Work();
+         school.homeWork();
         Funds funds3=new Bank();
         funds3.countingMoney();
         funds3.interest();
         funds3.takeLoan();
+        funds3.checkFunds();
 
 
         System.out.println("=================================");

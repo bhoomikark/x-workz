@@ -13,4 +13,10 @@ public class Football implements Game {
     public void endGame() {
         System.out.println("Football match ended.");
     }
+
+    @Override
+    public void pauseGame() {
+        //Game.super.pauseGame();
+        System.out.println("pause game -- Football");
+    }
 }

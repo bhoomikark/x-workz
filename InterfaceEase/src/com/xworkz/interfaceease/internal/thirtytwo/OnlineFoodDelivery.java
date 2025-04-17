@@ -15,4 +15,9 @@ public class OnlineFoodDelivery implements FoodDelivery {
     public void rateService() {
         System.out.println("Rating the food delivery service.");
     }
+@Override
+    public void onNotification()
+    {
+        System.out.println("on notification -- online food delivery");
+    }
 }

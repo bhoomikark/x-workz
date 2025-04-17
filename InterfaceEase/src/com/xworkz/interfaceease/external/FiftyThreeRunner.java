@@ -8,5 +8,6 @@ public class FiftyThreeRunner {
         d.launch();
         d.captureImage();
         d.land();
+        d.measureHeight();
     }
 }

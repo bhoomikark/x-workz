@@ -8,5 +8,6 @@ public class ThirtyEighthRunner {
         shop.addToCart();
         shop.makePayment();
         shop.trackOrder();
+        shop.viewHistory();
     }
 }

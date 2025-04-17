@@ -15,4 +15,9 @@ public class ElectricScooter implements ElectricVehicle{
     public void batteryOn() {
         System.out.println("Battery ON -- Electric scooter");
     }
+@Override
+    public void checkmilage()
+    {
+        System.out.println("check milage -- Electric scotter");
+    }
 }

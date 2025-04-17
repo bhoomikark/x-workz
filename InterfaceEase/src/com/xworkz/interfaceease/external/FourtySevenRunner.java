@@ -8,5 +8,6 @@ public class FourtySevenRunner {
         p.sketch();
         p.paint();
         p.display();
+        p.framePainting();
     }
 }

@@ -15,4 +15,9 @@ public class PayPal implements PaymentSystem {
     public void completeTransaction() {
         System.out.println("Transaction complete.");
     }
+    @Override
+    public void withdraw()
+    {
+        System.out.println("Running withdraw -- Paypal");
+    }
 }

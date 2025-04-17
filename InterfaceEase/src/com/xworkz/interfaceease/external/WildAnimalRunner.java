@@ -9,10 +9,12 @@ public class WildAnimalRunner {
         eagle.fly();
         eagle.land();
         eagle.makeSound();
+        eagle.sleepingHours();
         NocturnalAnimal nocturnal = new Leopard();
         nocturnal.huntAtNight();
         nocturnal.sleepDuringDay();
         nocturnal.makeSound();
+        nocturnal.attack();
         System.out.println("=================================");
 
         System.out.println("Running interface NocturnalAnimal reference from Owl class");
