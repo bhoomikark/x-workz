@@ -28,6 +28,6 @@ public class Bike implements Vehicle, ElectricVehicle {
 
     @Override
     public void batteryOn() {
-
+        System.out.println("Battery ON.");
     }
-}
+    }
