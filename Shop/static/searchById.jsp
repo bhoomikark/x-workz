@@ -16,24 +16,20 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="searchByID.jsp">SearchById</a>
         </li>
-         <li class="nav-item">
-                  <a class="nav-link" href="searchById.jsp">Search by ID</a>
-                </li>
       </ul>
     </div>
   </div>
 </nav>
-<form action="bhoomika" method="post">
+${errorMessage}
+<form action="bhoomika" method="get">
          id: <input type="number" name="id" required><br><br>
-        Name: <input type="text" name="name"><br><br>
-        Item Names: <input type="text" name="Itemnames"><br><br>
-        Phone Number: <input type="text" name="PhoneNumber"><br><br>
-        Total Cost: <input type="text" name="TotalCost"><br><br>
+
         <input type="submit" value="Record">
     </form>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+${dto.name},${dto.itemName}
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

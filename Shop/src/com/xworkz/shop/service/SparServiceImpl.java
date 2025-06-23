@@ -26,5 +26,17 @@ public class SparServiceImpl implements  SparService {
     }
         return"Details saved successfully";
 }
+
+    @Override
+    public SparDTO findById(int id) {
+        if(id>0)
+        {
+            System.out.println("id is valid, calling repo...");
+            SparRepositary sparRepositary=new SparRepoImpl();
+          SparDTO dto=  sparRepositary.findByid(id);
+          return  dto;
+        }
+        return SparService.super.findById(id);
+    }
 }
 

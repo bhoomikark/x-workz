@@ -28,6 +28,8 @@ public class ShoppingServlet extends HttpServlet {
         String Total_Cost=req.getParameter("TotalCost");
         long ConvertPhoneNo=Long.parseLong(PhoneNumber);
 
+
+
         System.out.println("before setting dto");
 SparDTO dto=new SparDTO();
         dto.setName(Name);
@@ -44,6 +46,32 @@ SparDTO dto=new SparDTO();
 
 
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("ShoppingResult.jsp");
+        requestDispatcher.forward(req, resp);
+
+
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Running doGet in JobServlet");
+        String id=req.getParameter("id");
+        int convertedId=Integer.parseInt(id);
+        System.out.println("search for convertedId: "+convertedId);
+        SparService sparService=new SparServiceImpl();
+        SparDTO sparDTO=sparService.findById(convertedId);
+        if(sparDTO==null)
+        {
+            System.out.println("data is not found");
+            req.setAttribute("errorMessage","Data not found for Id");
+
+        }
+        else {
+
+            System.out.println("data is found");
+            req.setAttribute("dto",sparDTO);
+        }
+
+        RequestDispatcher requestDispatcher = req.getRequestDispatcher("searchById.jsp");
         requestDispatcher.forward(req, resp);
 
 

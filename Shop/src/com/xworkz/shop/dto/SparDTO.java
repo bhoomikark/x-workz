@@ -13,6 +13,16 @@ public class SparDTO implements Serializable {
         System.out.println("Running Spar DTO");
     }
 
+    @Override
+    public String toString() {
+        return "SparDTO{" +
+                "name='" + name + '\'' +
+                ", itemName='" + itemName + '\'' +
+                ", convertPhoneNo=" + convertPhoneNo +
+                ", totalCost='" + totalCost + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
