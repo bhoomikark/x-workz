@@ -1,0 +1,27 @@
+public class Zomato {
+    static void signUp() {
+        System.out.println("Signing up");
+    }
+    static void login() {
+        System.out.println("Logging In");
+    }
+    static void homePage() {
+        System.out.println("WELCOME TO HOME PAGE");
+    }
+    static void order() {
+        System.out.println("Ordering food");
+    }
+    static void logout() {
+        System.out.println("Logging Out!!");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("********* Zomato Flow *********");
+        signUp();
+        login();
+        homePage();
+        order();
+        logout();
+        System.out.println("*******************************");
+    }
+}
