@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puma x Rosé</title>
+  <link rel="stylesheet" href="puma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+  <div class="top-heading">
+    <p><b>FREE RETURNS AND FREE EXCHANGE.</b></p>
+  </div>
+
+  <nav>
+    <div class="logo">
+      <img src="https://assets.turbologo.com/blog/en/2019/11/19084917/puma-logo-cover-958x575.png" alt="Puma Logo">
+    </div>
+    <div class="links">
+      <b>New</b>
+      <b>Men</b>
+      <b>Women</b>
+      <b>Sports</b>
+      <b>Motorsport</b>
+      <b>Lifestyle</b>
+      <b>Kids</b>
+      <b>Sale</b>
+    </div>
+    <div class="icons">
+      <i class="fa fa-search"></i>
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fa fa-user"></i>
+    </div>
+  </nav>
+
+
+  <div class="hero">
+    <div class="left-img">
+      <img src="https://cdn.sneakersquad.nl/uploads/primary/blog/Rose-x-Puma-collectie.jpg?fit=min&fm=webp&h=630&q=82&v=1756388589&w=1200&signature=de67fe02" alt="Rosé Left">
+    </div>
+    <div class="hero-text">
+      <h1><b>SINCERELY, ROSÉ</b></h1>
+      <p><b>PUMA x ROSÉ</b></p>
+      <button class="shop-btn">SHOP NOW</button>
+    </div>
+    <div class="right-img">
+      <img src="https://external-preview.redd.it/250830-ros%C3%A9s-debut-collection-with-puma-is-here-and-the-v0-4Sm0c6pX2Y7aLAmOMiiiDIU_vHeNuU_tXgDF7In2lfw.jpeg?width=640&crop=smart&auto=webp&s=9e0801760ae711187ac8c358c6b7c90b8005fe55" alt="Rosé Right">
+    </div>
+  </div>
+
+
+  <div class="fixed-logo">
+    <img src="https://assets.turbologo.com/blog/en/2019/11/19084917/puma-logo-cover-958x575.png" alt="Puma Logo">
+  </div>
+  <div class="future-hero">
+    <div class="future-img">
+      <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/629692/01/mod01/fnd/IND/fmt/png/FUTURE-ARCHIVE-Relaxed-Fit-16%22-Cargo-Jorts" alt="Future Collection">
+    </div>
+    <div class="future-text">
+      <h1><b>THE FUTURE JUST LANDED</b></h1>
+      <p><b>OWN THE NEW SEASON</b></p>
+      <button class="for-btn">FOR HIM</button>&nbsp;&nbsp;&nbsp;
+      <button class="for-btn">FOR HER</button>
+    </div>
+  </div>
+  <div class="speedcat-hero">
+  <div class="speedcat-img">
+    <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1vGPNg.img?w=800&h=415&q=60&m=2&f=jpg" alt="Speedcat Collection">
+  </div>
+  <div class="speedcat-text">
+    <h1><b>SPEEDCAT</b></h1>
+    <p><b>A HIGH-SPEED LEGACY</b></p>
+    <p>Worn by Ibrahim Ali Khan and Tania Shroff</p>
+    <div class="btn-group">
+      <button class="for-btn">SHOP NOW</button>&nbsp;&nbsp;&nbsp;
+      <button class="for-btn">EXPLORE STYLE GUIDE</button>
+    </div>
+  </div>
+</div>
+<div class="kidsuper-hero">
+  <div class="kidsuper-img">
+    <img src="https://cdn.lesitedelasneaker.com/wp-content/images/2021/03/kidsuper-studios-puma-collection-2021-sortie5.jpg" alt="Puma Kidsuper Collection">
+  </div>
+  <div class="kidsuper-text">
+    <h1><b>PUMA × KIDSUPER</b></h1>
+    <p><b>IT’S GAME TIME</b></p>
+    <div class="btn-group">
+      <button class="for-btn">SHOP NOW</button>
+    </div>
+  </div>
+</div>
+<div class="pv-sindhu">
+  <div class="pvsindhu-img">
+    <img src="https://assets.vogue.in/photos/67862e693174f04c2bf6221d/16:9/w_4000,h_2250,c_limit/Puma_05_Jan_25_Day2_11164.jpg" alt="Puma Kidsuper Collection">
+  </div>
+  <div class="pv-text">
+    <h1><b>GAME . SET. SINDHU</b></h1>
+    <p><b>PUMA COURT COLLECTION</b></p>
+    <h4>Worn By PV Sindhu</h4>
+    <div class="btn-group">
+      <button class="for-btn">SHOP NOW</button>
+    </div>
+  </div>
+</div>
+<div class="the-headliner">
+  <div class="headliner-img">
+    <img src="https://singleinterface-timeline-images.s3.ap-south-1.amazonaws.com/images/136292/fb_post_136292_2025_03_08_00_24_10_1463400223890245_685894917098929.jpg" alt="Puma Kidsuper Collection">
+  </div>
+  <div class="headliner-text">
+    <h1><b>THE HEADLINER</b></h1>
+    <p><b>MB.05 WORLD TOUR</b></p>
+
+    <div class="btn-group">
+      <button class="for-btn">SHOP NOW</button>
+    </div>
+  </div>
+</div>
+<div class="circle-section">
+  <div class="circle">ALL DAY SNEAKERS</div>
+  <div class="circle">SPORTS SHOES</div>
+  <div class="circle">BUY 2 GET UPTO 50% OFF</div>
+  <div class="circle">NEW IN KIDS</div>
+</div>
+
+</body>
+</html>
