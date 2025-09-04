@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-Demo</title>
+    <style>
+        div{
+            border:1px Solid black;
+            height:250px;
+            width:250px;
+            background-color: black;
+            animation:chombu;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-direction: reverse;
+
+
+        }
+        @keyframes chombu
+        {
+            0%
+            {
+                position:relative;
+                top:0px;
+                left:0px;
+                right:0px;
+                bottom:opx;
+            }
+             25%
+            {
+                position:relative;
+                top:200px;
+                left:0px;
+                right:0px;
+                bottom:0px;
+                background-color: red;
+            }
+            50%
+            {
+                position:relative;
+                top:200px;
+                left:200px;
+                right:0px;
+                bottom:0px;
+                background-color: blue;
+            }
+             75%
+            {
+                position:relative;
+                top:0px;
+                left:200px;
+                right:200px;
+                bottom:200px;
+                background-color: coral;
+            }
+             100%
+            {
+                position:relative;
+                top:0px;
+                left:0px;
+                right:0px;
+                bottom:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
